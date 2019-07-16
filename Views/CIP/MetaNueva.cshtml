@@ -1,0 +1,521 @@
+﻿@model IEnumerable<PANTALLACIP.Models.pantalla_facturada_Result>
+@{
+    ViewBag.Title = "MetaNueva";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<!-- ================== BEGIN BASE CSS STYLE ================== -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="~/color/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+<link href="~/color/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/color/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/animate.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/style.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/style-responsive.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/theme/default.css" rel="stylesheet" id="theme" />
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<!-- ================== END BASE CSS STYLE ================== -->
+<meta name="viewport" content="width=device-width">
+
+<style>
+    .table > thead > tr > th,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > tbody > tr > td,
+    .table > tfoot > tr > td {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: baseline;
+        border-top: 1px solid #ddd;
+    }
+</style>
+@foreach (var item in Model)
+{
+    //{
+    //    String ventas = "{ label: 'GIULIANA', value:" + item.Guiliana + ", color: colorGiulian },"
+    //        + "{ label: 'MARIA', value:" + @item.Maria + ", color: colorGrupos } ,"
+    //            + "{ label: 'EVELYN', value:" + @item.Evelyn + ", color: colorEvelyn },"
+    //            + "{ label: 'SOFIA', value:" + @item.Sofia + ", color: colorSofia },"
+    //        + "{ label: 'VANESSA', value: " + @item.Vanesa + ", color: colorVanesa },"
+    //        + "{ label: 'GERARDO', value:" + @item.Gerardo + ", color: colorGerardo },"
+    //        + "{ label: 'FELIPE', value:" + @item.Felipe + ", color: colorFelipe },"
+    //        + "{ label: 'ROBERT',value:" + @item.Robert + ", color: colorRobert },"
+    //        + "{ label: 'VICTORIA', value:" + @item.Victoria + ", color: colorVictoria},"
+    //        + "{ label: 'SHARON', value:" + @item.Sharon + ", color: colorSharon },"
+    //        + "{ label: 'ELIANA', value:" + @item.Eliana + ", color: colorGrupos },"
+    //        + "{ label: 'VALERIA', value:" + @item.Valeria + ", color: colorValeria },"
+    //        + "{ label: 'FERNANDA', value:" + @item.Fernanda + ", color: colorFernanda}";
+    //}
+    <script>
+        function reloadAuto() {
+            document.location.reload();
+        }
+        setTimeout(reloadAuto, 60000);
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load("current", { packages: ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Counter', 'Metas', 'Ventas', { role: 'style' }],
+            ['Felipe', 60000, @item.FelipeFacturado.ToString().Replace(",","."), 'color: #ffb1da'],
+            ['Sofia', 80000, @item.SofiaFacturado.ToString().Replace(",", "."), 'color: #ffbf00'],
+            ['Gerardo', 10000, @item.GerardoFacturado.ToString().Replace(",", "."), 'color: #4CAF50'],
+            ['Giuliana', 60000, @item.GuilianaFacturado.ToString().Replace(",", "."), 'color: #00e600'],
+            ['Sharon', 0, @item.SharonFacturado.ToString().Replace(",", "."), 'color: #cc0044'],
+            ['Eliana', 70000, @item.ElianaFacturado.ToString().Replace(",", "."), 'color: #fff400'],
+            ['Marianne', 140000, @item.MarianneFacturado.ToString().Replace(",", "."), 'color: #FE2EF7'],
+            ['Alejandra', 60000, @item.AlejandraFacturado.ToString().Replace(",", "."), 'color: #8ef7ff'],
+            ['Yolanda', 100000, @item.YolandaFacturado.ToString().Replace(",", "."), 'color: #e65c00'],
+            ['Alejandro', 35000, @item.AlejandroFacturado.ToString().Replace(",", "."), 'color: #AA6739'],
+            ['Ingrid', 50000, @item.IngridFacturado.ToString().Replace(",", "."), 'color: #A845FF'],
+            ['Vilma', 50000, @item.VilmaFacturado.ToString().Replace(",", "."), 'color: #cebbff'],
+            ['Lizzy', 0, @item.LizzyFacturado.ToString().Replace(",", "."), 'color: #ED058B']
+        ]);
+
+        data.sort([{ column: 2, desc: true }]);
+
+        var formatter = new google.visualization.NumberFormat({
+            pattern: "#,###"
+        });
+
+        formatter.format(data, 1);
+
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0, 1,
+                         {
+                             calc: "stringify",
+                             sourceColumn: 1,
+                             type: "string",
+                             role: "annotation"
+                         },
+                         2]);
+
+        var options = {
+            zoom:"80%",
+            width:"100%",
+            height: 250,
+            bar: { groupWidth: "95%" },
+            legend: { position: "none" },
+            titlePosition: "none",
+            axisTitlesPosition: "none",
+            chartArea: { right: 5, top: 10, width: "94%", height: "82%"  },
+            hAxis: {
+                textStyle: {
+                    fontSize: 12
+                }
+            },
+            vAxis: {
+                textStyle: {
+                    fontSize: 12
+                },
+                format: "#,###"
+            },
+            annotations: {
+                textStyle: {
+                    bold: true,
+                    fontSize: 15
+                },
+                alwaysOutside: false
+            },
+            color: ['red', 'red', 'blue', 'blue', 'gold', 'gold']
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+        chart.draw(view, options);
+    }
+    </script>
+
+    <div id="page-loader" class="fade in"><span class="spinner"></span></div>
+    <!-- end #page-loader -->
+    <!-- begin #page-container -->
+    <div id="page-container" class="page-container fade page-sidebar-fixed page-header-fixed">
+        <div id="content" class="content" style="zoom:80%;padding-bottom: 15px;">
+            <style>
+                .page-header-fixed {
+                    padding-top: 5px;
+                }
+
+                .panel-title, .panel-title .pull-right {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+
+                .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+                    font-size: 18px;
+                }
+
+                .badge, .label {
+                    font-size: 100%;
+                }
+
+                th {
+                    padding: 5px !important;
+                }
+
+                td {
+                    padding: 5px !important;
+                }
+
+                #columnchart_values {
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+                }
+
+                @@media screen and (max-width: 500px) {
+                    h1.panel-title {
+                        font-size: 40px !important;
+                    }
+                }
+
+                @@media screen and (max-width: 500px) {
+                    .total {
+                        font-size: 18px !important;
+                    }
+                }
+
+
+                @@media screen and (max-width: 500px) {
+                    div.panel-body div#columnchart_values::before div div div svg g:first-child g:last-child g g text {
+                        font-size: 13px !important;
+                    }
+                }
+
+                .highcharts-axis-labels > text {
+                    font-size: 10px !important;
+                }
+
+                highcharts-label > text > tspan {
+                    font-size: 8px !important;
+                }
+
+                .highcharts-text-outline {
+                    /*font-size: 10px !important;*/
+                }
+
+                .highcharts-legend-item > text {
+                    font-size: 9px !important;
+                }
+
+                .highcharts-legend-item .highcharts-point {
+                    width: 8px !important;
+                    height: 8px !important;
+                    margin-top: 2px !important;
+                }
+
+                .highcharts-tooltip {
+                    font-size: 10px !important;
+                    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif,
+                }
+
+                .dd {
+                    position: relative;
+                    height: 10px !important;
+                    width: 10px !important;
+                    display: block !important;
+                }
+
+                .ll {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 10px;
+                    color: red;
+                }
+            </style>
+
+            <h1 class="panel-title" style="text-align:center; color:black; width:100%; height:55px; font-size:80px; margin-top:10px">@(DateTime.Now.ToString("MMMM") + " " + DateTime.Now.ToString("yyyy"))</h1>
+            <!-- begin row -->
+            <div class="row">
+
+                <div class="col-md-12">
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" style="text-align:center">Venta Facturada por Counter</h4>
+                        </div>
+                        <div class="panel-body" style="padding: 5px !important">
+                            @*<div id="columnchart_values" class="col-md-12">
+                                </div>*@
+
+                            <div id="container" style="min-width: 310px; height: 270px; margin: 0 auto">
+                            </div>
+
+                            <table id="datatable" hidden>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Meta</th>
+                                        <th>Venta Facturada</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>GUILIANA</th>
+                                        <td>140000</td>
+                                        <td>@item.GuilianaFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>MARIANNE</th>
+                                        <td>140000</td>
+                                        <td>@item.MarianneFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>YOLANDA</th>
+                                        <td>90000</td>
+                                        <td>@item.YolandaFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>VILMA</th>
+                                        <td>70000</td>
+                                        <td>@item.VilmaFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>INGRID</th>
+                                        <td>65000</td>
+                                        <td>@item.IngridFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>SOFIA</th>
+                                        <td>65000</td>
+                                        <td>@item.SofiaFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>FELIPE</th>
+                                        <td>60000</td>
+                                        <td>@item.FelipeFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ELIANA</th>
+                                        <td>50000</td>
+                                        <td>@item.ElianaFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ALEJANDRO</th>
+                                        <td>40000</td>
+                                        <td>@item.AlejandroFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ALEJANDRA</th>
+                                        <td>30000</td>
+                                        <td>@item.AlejandraFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>GERARDO</th>
+                                        <td>20000</td>
+                                        <td>@item.GerardoFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>LIZZY</th>
+                                        <td>0</td>
+                                        <td>@item.LizzyFacturado.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-6 -->
+            </div>
+            <!-- end row -->
+            <!-- begin row -->
+            <!-- end row -->
+            <!-- begin row -->
+            <div class="panel-heading" style="padding-top: 0px;padding-bottom: 0px;">
+                <h4 class="panel-title total" style="text-align:center; font-size:22px; color:black; font-weight: 800 !important">Total de Ventas Facturadas :  $ <label class="total hoy" style="font-size:22px; color:black; font-weight: bold">@item.TotalFacturado.Value.ToString("N")</label></h4>
+                <h4 class="panel-title total" style="text-align:center; font-size:22px; color:black; font-weight: 800 !important">Total de Ventas :  $ <label class="total hoy" style="font-size:22px; color:black; font-weight: bold">@item.TotalBarras.Value.ToString("N")</label></h4>
+                <h4 class="panel-title total" style="text-align:center; font-size:22px; color:red; font-weight: 800 !important">Ventas del día anterior :  $ <label class="ayer" style="font-size:22px; color:red; font-weight: bold"></label></h4>
+                <input type="hidden" id="ocultito" value="" />
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end #content -->
+        <!-- begin scroll to top btn -->
+        <a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+        <!-- end scroll to top btn -->
+    </div>
+
+    <script type="text/javascript">
+        function cero(n) {
+            var x = parseFloat(n.replace(/,/g, ''));
+            var r = (x == '-Infinity' ? 0.0 : x == 'Infinity' ? 0.0 : x == 'NaN' ? 0.0 : x);
+            return r;
+        }
+
+        function cerot(x) {
+            if (!(x == x)) {
+                return 0.0;
+            }
+            var r = (x == '-Infinity' ? 0.0 : x == 'Infinity' ? 0.0 : x == 'NaN' ? 0.0 : x);
+            return r;
+        }
+
+        function salte() {
+            $('g.highcharts-series-0').each(function () {
+                $('tspan.highcharts-text-outline', this).each(function (i) {
+                    var bb = $(this).text();
+                    console.log('meta (' + i + ') => ' + bb.replace(/,/g, '') + ' ');
+                });
+            });
+
+            $('g.highcharts-series-1').each(function () {
+                $('tspan.highcharts-text-outline', this).each(function (i) {
+                    var a = $('g.highcharts-series-0 > g.highcharts-data-label-color-' + i + ' > text > tspan.highcharts-text-outline').text();
+                    var b = $(this).text();
+                    var aa = cero(a);
+                    var bb = cero(b);
+                    var cc = Math.round(((bb / aa) * 100) * 100) / 100;
+
+                    //var tt = '<div class="dd"><tspan x="5" y="16" class="ll">' + cc + '%</tspan></div>'
+                    //$(tt).appendTo('g.highcharts-series-1 > g.highcharts-data-label-color-' + i)
+                    //console.log('posi => ' + JSON.stringify($('.panel-title').position()));
+
+                    var $tgt = d3.select('g.highcharts-series-1 > g.highcharts-data-label-color-' + i);
+                    var $txt = $tgt.append('text');
+                    var $tsp = $txt.append('tspan');
+
+                    $txt.style({ 'font-size': '10px', 'font-family': 'Arial', 'fill': 'red', 'font-weight': '800', 'text-align': 'center' });
+                    $txt.attr('x', '4');
+                    $txt.attr('y', '-3');
+
+                    $tsp.text(cerot(cc) + '%');
+
+                    console.log('venta (' + i + ') => ' + bb + ' - ' + aa + ' = ' + cc + '%');
+                });
+            });
+        }
+
+        function formatDecimal(num) {
+            if (isNaN(num)) {
+                return 0.00;
+            }
+            return accounting.formatMoney(num, { symbol: "PEN", format: "%v" });
+        }
+
+        function save() {
+            var param = {
+                monto: cero($('.hoy').text())
+            }
+
+            $.ajax({
+                type: 'POST',
+                url: '/CIP/SaveDiaAnterior',
+                data: param,
+                async: false,
+                success: function (data) {
+                    if (data.status) {
+                        console.log('SE REGISTRO MONTO DE AYER');
+                        console.log(JSON.stringify(param));
+                    }
+                    else {
+                        console.log('FALLO AL REGISTRAR');
+                        console.log(JSON.stringify(param));
+                    }
+                },
+                error: function (err) {
+                    console.log('ERROR MY DEAR: ' + JSON.stringify(err));
+                }
+            });
+        }
+
+        function get() {
+            $.ajax({
+                type: 'GET',
+                url: '/CIP/GetDiaAnterior',
+                data: {},
+                async: false,
+                success: function (data) {
+                    if (data != null) {
+                        $('.ayer').text(formatDecimal(data));
+                        $('#ocultito').val(formatDecimal(data));
+                        console.log('MONTO DEl DIA ANTERIOR $' + JSON.stringify(formatDecimal(data)));
+                    }
+                    else {
+                        $('.ayer').text('0.00');
+                    }
+                },
+                error: function (err) {
+                    console.log('ERROR MY DEAR: ' + JSON.stringify(err));
+                }
+            });
+        }
+
+
+        //var put = setInterval(function () {
+        //    var horaAct = new Date().getHours();
+        //    var minuAct = new Date().getMinutes();
+        //    //localStorage['cip'] = $('.hoy').text();
+        //    window.name = 'ALL THE LEAVES IS BROWN AND THE SKY IS GRAY';
+
+        //    if ('9' <= horaAct && horaAct <= '9') {
+        //        if ('40' <= minuAct && minuAct <= '59') {
+        //            //var ourhouse = localStorage['cip'] || '0.00';
+        //            $('#ocultito').val(window.name);
+        //            //$('.ayer').text(window.name);
+        //        }
+        //    }
+        //}, 1000)
+
+        //var alarma = setInterval(function () {
+        //    var horaAct = new Date().getHours();
+        //    var minuAct = new Date().getMinutes();
+
+        //    if (horaAct >= horaAlarma) {
+        //        if (minuAct >= minuAlarma) {
+        //            var hoy = $('#ocultito').text() + ' a las ' + horaAct + ':' + (minuAct < 10 ? '0' + minuAct : '' + minuAct);
+        //            $('.ayer').html(hoy);
+        //        }
+        //    }
+        //}, 1000)
+
+        function tanque() {
+            var horaAct = new Date().getHours();
+            var minuAct = new Date().getMinutes();
+
+            if (horaAct == '22') {
+                if (minuAct >= '01' && minuAct <= '03') {
+                    save();
+                    console.log('MONTO DIA ANTERIOR, INGRESO A LAS ' + horaAct + ':' + minuAct);
+                }
+            }
+        };
+    </script>
+}
+<!-- end page container -->
+<!-- ================== BEGIN BASE JS ================== -->
+<script src="~/color/assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+<script src="~/color/assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+<script src="~/color/assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+<script src="~/color/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="assets/crossbrowserjs/html5shiv.js"></script>
+    <script src="assets/crossbrowserjs/respond.min.js"></script>
+    <script src="assets/crossbrowserjs/excanvas.min.js"></script>
+<![endif]-->
+<script src="~/color/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="~/color/assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+<!-- ================== END BASE JS ================== -->
+<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+<script src="~/color/cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
+<script src="~/color/assets/plugins/nvd3/build/nv.d3.js"></script>
+<script src="~/color/assets/js/chart-d3.demo.min.js"></script>
+<script src="~/color/assets/js/apps.min.js"></script>
+<script src="~/Scripts/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.js"></script>
+<!-- ================== END PAGE LEVEL JS ================== -->
+
+<script>
+    $(document).ready(function () {
+        App.init();
+        ChartNvd3.init();
+        tanque();
+        salte();
+        get();
+    });
+</script>

@@ -1,0 +1,266 @@
+﻿@model IEnumerable<PANTALLACIP.Models.VENTASPORMES_Result>
+
+@{
+    ViewBag.Title = "VentaporMes";
+}
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<!-- ================== BEGIN BASE CSS STYLE ================== -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="~/color/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+<link href="~/color/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/color/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/animate.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/style.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/style-responsive.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/theme/default.css" rel="stylesheet" id="theme" />
+<!-- ================== END BASE CSS STYLE ================== -->
+
+
+<style>
+    .table > thead > tr > th,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > tbody > tr > td,
+    .table > tfoot > tr > td {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: baseline;
+        border-top: 1px solid #ddd;
+    }
+</style>
+@foreach (var item in Model)
+{
+
+    <script>setTimeout('document.location.reload()', 60000); </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load("current", { packages: ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+        ['MES', 'Ventas', { role: 'style' }],
+        @*['ABRIL 2017',@item.ABRIL2017.ToString().Replace(",", "."), 'color: #8ef7ff'],
+        ['MAYO 2017',@item.MAYO2017.ToString().Replace(",", "."), 'color: #8ef7ff'],
+        ['JUNIO 2017',@item.JUNIO2017.ToString().Replace(",", "."), 'color: #8ef7ff'],
+        ['JULIO 2017',@item.JULIO2017.ToString().Replace(",", "."), 'color: #8ef7ff'],
+        ['AGOSTO 2017', @item.AGOSTO2017.ToString().Replace(",", "."), 'color: #ffc000'],
+        ['SETIEMBRE 2017', @item.SETIEMBRE2017.ToString().Replace(",", "."), 'color: #a3f2a1'],
+        ['OCTUBRE 2017', @item.OCTUBRE2017.ToString().Replace(",", "."), 'color: #A845FF'],
+        ['NOVIEMBRE 2017', @item.NOVIEMBRE2017.ToString().Replace(",", "."), 'color: #de65ff'],
+        ['DICIEMBRE 2017', @item.DICIEMBRE2017.ToString().Replace(",", "."), 'color: #ffb1da'],*@
+        ['ENERO 2018', @item.ENERO2018.ToString().Replace(",", "."), 'color: #cebbff'],
+        ['FEBRERO 2018', @item.FEBRERO2018.ToString().Replace(",", "."), 'color: #CDDC39'],
+        ['MARZO 2018', @item.FEBRERO2018.ToString().Replace(",", "."), 'color: #CDDC39'],
+        ['ABRIL 2018',@item.ABRIL2017.ToString().Replace(",", "."), 'color: #8ef7ff'],
+        ['MAYO 2018',@item.MAYO2017.ToString().Replace(",", "."), 'color: #8ef7ff'],
+        ['JUNIO 2018',@item.JUNIO2017.ToString().Replace(",", "."), 'color: #8ef7ff'],
+        ['JULIO 2018',@item.JULIO2017.ToString().Replace(",", "."), 'color: #8ef7ff'],
+        ['AGOSTO 2018', @item.AGOSTO2017.ToString().Replace(",", "."), 'color: #ffc000'],
+        ['SETIEMBRE 2018', @item.SETIEMBRE2017.ToString().Replace(",", "."), 'color: #a3f2a1'],
+        ['OCTUBRE 2018', @item.OCTUBRE2017.ToString().Replace(",", "."), 'color: #A845FF'],
+        ['NOVIEMBRE 2018', @item.NOVIEMBRE2017.ToString().Replace(",", "."), 'color: #de65ff'],
+        ['DICIEMBRE 2018', @item.DICIEMBRE2017.ToString().Replace(",", "."), 'color: #ffb1da'],
+        ]);
+
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0, 1,
+                         {
+                             calc: "stringify",
+                             sourceColumn: 1,
+                             type: "string",
+                             role: "annotation"
+                         },
+                         2]);
+
+        var options = {
+            width:"100%",
+            height: 400,
+            bar: { groupWidth: "95%" },
+            legend: { position: "none" },
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+        chart.draw(view, options);
+    }
+    </script>
+
+
+
+    <!-- begin #page-loader -->
+    <div id="page-loader" class="fade in"><span class="spinner"></span></div>
+    <!-- end #page-loader -->
+    <!-- begin #page-container -->
+    <div id="page-container" class="page-container fade page-sidebar-fixed page-header-fixed">
+        <!-- begin #header -->
+        <!-- end #header -->
+        <!-- begin #sidebar -->
+        <!-- end #sidebar -->
+        <!-- begin #content -->
+        <div id="content" class="content" style="zoom:80%">
+            <!-- begin breadcrumb -->
+            <!-- end breadcrumb -->
+            <!-- begin page-header -->
+            <!-- end page-header -->
+            <!-- begin alert -->
+            <!-- end alert -->
+            <style>
+                .page-header-fixed {
+                    padding-top: 5px;
+                }
+
+                .panel-title, .panel-title .pull-right {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+
+                .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+                    font-size: 18px;
+                }
+
+                .badge, .label {
+                    font-size: 100%;
+                }
+            </style>
+            <h1 class="panel-title" style="text-align:center; color:black; width:100%; height:100px; font-size:90px; margin-top:20px">Mes Actual</h1>
+            <!-- begin row -->
+            <div class="row">
+                <!-- begin col-6 -->
+                <!-- end col-6 -->
+                <!-- begin col-6 -->
+
+                <div class="col-md-12">
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+
+                            <h4 class="panel-title" style="text-align:center">Venta por mes</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div id="columnchart_values" class="col-md-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- end col-6 -->
+            </div>
+            <!-- end row -->
+            <!-- begin row -->
+            <!-- end row -->
+            <!-- begin row -->
+            <!-- end row -->
+        </div>
+        <!-- end #content -->
+        <!-- begin theme-panel -->
+        <div class="theme-panel">
+            <a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+            <div class="theme-panel-content">
+                <h5 class="m-t-0">Color Theme</h5>
+                <ul class="theme-list clearfix">
+                    <li class="active"><a href="javascript:;" class="bg-green" data-theme="default" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-red" data-theme="red" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-blue" data-theme="blue" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-purple" data-theme="purple" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-orange" data-theme="orange" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-black" data-theme="black" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black">&nbsp;</a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Header Styling</div>
+                    <div class="col-md-7">
+                        <select name="header-styling" class="form-control input-sm">
+                            <option value="1">default</option>
+                            <option value="2">inverse</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label">Header</div>
+                    <div class="col-md-7">
+                        <select name="header-fixed" class="form-control input-sm">
+                            <option value="1">fixed</option>
+                            <option value="2">default</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Sidebar Styling</div>
+                    <div class="col-md-7">
+                        <select name="sidebar-styling" class="form-control input-sm">
+                            <option value="1">default</option>
+                            <option value="2">grid</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label">Sidebar</div>
+                    <div class="col-md-7">
+                        <select name="sidebar-fixed" class="form-control input-sm">
+                            <option value="1">fixed</option>
+                            <option value="2">default</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Sidebar Gradient</div>
+                    <div class="col-md-7">
+                        <select name="content-gradient" class="form-control input-sm">
+                            <option value="1">disabled</option>
+                            <option value="2">enabled</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Content Styling</div>
+                    <div class="col-md-7">
+                        <select name="content-styling" class="form-control input-sm">
+                            <option value="1">default</option>
+                            <option value="2">black</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-12">
+                        <a href="#" class="btn btn-inverse btn-block btn-sm" data-click="reset-local-storage"><i class="fa fa-refresh m-r-3"></i> Reset Local Storage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end theme-panel -->
+        <!-- begin scroll to top btn -->
+        <a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+        <!-- end scroll to top btn -->
+    </div>
+
+}
+<!-- end page container -->
+<!-- ================== BEGIN BASE JS ================== -->
+<script src="~/color/assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+<script src="~/color/assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+<script src="~/color/assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+<script src="~/color/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="assets/crossbrowserjs/html5shiv.js"></script>
+    <script src="assets/crossbrowserjs/respond.min.js"></script>
+    <script src="assets/crossbrowserjs/excanvas.min.js"></script>
+<![endif]-->
+<script src="~/color/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="~/color/assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+<!-- ================== END BASE JS ================== -->
+<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+<script src="~/color/cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
+<script src="~/color/assets/plugins/nvd3/build/nv.d3.js"></script>
+<script src="~/color/assets/js/chart-d3.demo.min.js"></script>
+<script src="~/color/assets/js/apps.min.js"></script>
+<!-- ================== END PAGE LEVEL JS ================== -->
+
+<script>
+    $(document).ready(function () {
+        App.init();
+        ChartNvd3.init();
+    });
+</script>

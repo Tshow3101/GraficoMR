@@ -1,0 +1,809 @@
+﻿@model IEnumerable<PANTALLACIP.Models.pantalla_Result>
+
+@{
+    ViewBag.Title = "Meta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+<!-- ================== BEGIN BASE CSS STYLE ================== -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="~/color/assets/plugins/jquery-ui/themes/base/minified/jquery-ui.min.css" rel="stylesheet" />
+<link href="~/color/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/color/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/animate.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/style.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/style-responsive.min.css" rel="stylesheet" />
+<link href="~/color/assets/css/theme/default.css" rel="stylesheet" id="theme" />
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<!-- ================== END BASE CSS STYLE ================== -->
+<meta name="viewport" content="width=device-width">
+
+<style>
+    .table > thead > tr > th,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > tbody > tr > td,
+    .table > tfoot > tr > td {
+        padding: 8px;
+        line-height: 1.42857143;
+        vertical-align: baseline;
+        border-top: 1px solid #ddd;
+    }
+</style>
+@foreach (var item in Model)
+{
+    //{
+    //    String ventas = "{ label: 'GIULIANA', value:" + item.Guiliana + ", color: colorGiulian },"
+    //        + "{ label: 'MARIA', value:" + @item.Maria + ", color: colorGrupos } ,"
+    //            + "{ label: 'EVELYN', value:" + @item.Evelyn + ", color: colorEvelyn },"
+    //            + "{ label: 'SOFIA', value:" + @item.Sofia + ", color: colorSofia },"
+    //        + "{ label: 'VANESSA', value: " + @item.Vanesa + ", color: colorVanesa },"
+    //        + "{ label: 'GERARDO', value:" + @item.Gerardo + ", color: colorGerardo },"
+    //        + "{ label: 'FELIPE', value:" + @item.Felipe + ", color: colorFelipe },"
+    //        + "{ label: 'ROBERT',value:" + @item.Robert + ", color: colorRobert },"
+    //        + "{ label: 'VICTORIA', value:" + @item.Victoria + ", color: colorVictoria},"
+    //        + "{ label: 'SHARON', value:" + @item.Sharon + ", color: colorSharon },"
+    //        + "{ label: 'ELIANA', value:" + @item.Eliana + ", color: colorGrupos },"
+    //        + "{ label: 'VALERIA', value:" + @item.Valeria + ", color: colorValeria },"
+    //        + "{ label: 'FERNANDA', value:" + @item.Fernanda + ", color: colorFernanda}";
+    //}
+    <script>
+        function reloadAuto() {
+            document.location.reload();
+        }
+        setTimeout(reloadAuto, 60000);
+    </script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load("current", { packages: ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+            ['Counter', 'Metas', 'Ventas', { role: 'style' }],
+            ['Felipe', 60000, @item.Felipe.ToString().Replace(",","."), 'color: #ffb1da'],
+            @*['VANESSA', @item.Vanesa.ToString().Replace(",", "."), 'color: #a3f2a1'],*@
+            @*['ROBERT', @item.Robert.ToString().Replace(",", "."), 'color: #A845FF'],*@
+            ['Sofia', 80000, @item.Sofia.ToString().Replace(",", "."), 'color: #ffbf00'],
+            @*['JAVIER', @item.Javier.ToString().Replace(",", "."), 'color: #ffb1da'],*@
+            ['Gerardo', 10000, @item.Gerardo.ToString().Replace(",", "."), 'color: #4CAF50'],
+            @*['VALERIA', @item.Valeria.ToString().Replace(",", "."), 'color: #FF5722'],*@
+            @*['Evelyn', @item.Evelyn.ToString().Replace(",", "."), 'color: #79a6d2'],*@
+            ['Giuliana', 60000, @item.Guiliana.ToString().Replace(",", "."), 'color: #00e600'],
+            @*['Victoria', @item.Victoria.ToString().Replace(",", "."), 'color: #b3b3ff'],*@
+            @*['Olga', @item.Olga, 'color: #cebbff'],*@
+	        @*['FERNANDA', @item.Fernanda.ToString().Replace(",", "."), 'color: #4CAF50'],*@
+            @*['Arlette', @item.Arlette, 'color: #46af2c'],*@
+            @*['Edith', @item.Edith, 'color: #fe7b2e'],*@
+            ['Sharon', 0, @item.Sharon.ToString().Replace(",", "."), 'color: #cc0044'],
+            ['Eliana', 70000, @item.Eliana.ToString().Replace(",", "."), 'color: #fff400'],
+            ['María', 60000, @item.Maria.ToString().Replace(",", "."), 'color: #79a6d2'],
+            ['Marianne', 140000, @item.Marianne.ToString().Replace(",", "."), 'color: #FE2EF7'],
+            ['Alejandra', 60000, @item.Alejandra.ToString().Replace(",", "."), 'color: #8ef7ff'],
+            ['Yolanda', 100000, @item.Yolanda.ToString().Replace(",", "."), 'color: #e65c00'],
+            @*['Renzo', 0, @item.Renzo.ToString().Replace(",", "."), 'color: #de65ff'],*@
+            @*['Lola', @item.Lola.ToString().Replace(",", "."), 'color: #A845FF'],*@
+            @*['Joan', @item.Joan.ToString().Replace(",", "."), 'color: #cebbff'],*@
+            @*['Jesus', 0, @item.Jesus.ToString().Replace(",", "."), 'color: #a3f2a1'],*@
+            ['Alejandro', 35000, @item.Alejandro.ToString().Replace(",", "."), 'color: #AA6739'],
+            ['Ingrid', 50000, @item.Ingrid.ToString().Replace(",", "."), 'color: #A845FF'],
+            ['Vilma', 50000, @item.Vilma.ToString().Replace(",", "."), 'color: #cebbff'],
+            ['Lizzy', 0, @item.Lizzy.ToString().Replace(",", "."), 'color: #ED058B']
+        ]);
+
+        data.sort([{ column: 2, desc: true }]);
+
+        var formatter = new google.visualization.NumberFormat({
+            pattern: "#,###"
+        });
+
+        formatter.format(data, 1);
+
+        @*var Ventas='{ label: "GIULIANA", value:'+ @item.Guiliana+', color: colorGiulian },'
+		+'{ label: "MARIA", value:'+ @item.Maria+', color: colorGrupos } ,'
+            +'{ label: "EVELYN", value:'+ @item.Evelyn+', color: colorEvelyn },'
+            +'{ label: "SOFIA", value:'+ @item.Sofia+', color: colorSofia },'
+            +'{ label: "VANESSA", value:'+ @item.Vanesa+', color: colorVanesa },'
+            +'{ label: "GERARDO", value:'+ @item.Gerardo+', color: colorGerardo },'
+            +'{ label: "FELIPE", value:'+ @item.Felipe+', color: colorFelipe },'
+            +'{ label: "ROBERT",value:'+ @item.Robert+', color: colorRobert },'
+            +'{ label: "VICTORIA", value:'+ @item.Victoria+', color: colorVictoria},'
+            +'{ label: "SHARON", value:'+ @item.Sharon+', color: colorSharon },'
+            +'{ label: "ELIANA", value:'+ @item.Eliana+', color: colorGrupos },'
+            +'{ label: "VALERIA", value:'+ @item.Valeria+', color: colorValeria },'
+            +'{ label: "FERNANDA", value:'+ @item.Fernanda+', color: colorFernanda}';
+
+        $("#txtValor").val(Ventas);*@
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0, 1,
+                         {
+                             calc: "stringify",
+                             sourceColumn: 1,
+                             type: "string",
+                             role: "annotation"
+                         },
+                         2]);
+
+        var options = {
+            zoom:"80%",
+            width:"100%",
+            height: 250,
+            bar: { groupWidth: "95%" },
+            legend: { position: "none" },
+            titlePosition: "none",
+            axisTitlesPosition: "none",
+            chartArea: { right: 5, top: 10, width: "94%", height: "82%"  },
+            hAxis: {
+                textStyle: {
+                    fontSize: 12
+                }
+            },
+            vAxis: {
+                textStyle: {
+                    fontSize: 12
+                },
+                format: "#,###"
+            },
+            annotations: {
+                textStyle: {
+                    bold: true,
+                    fontSize: 15
+                },
+                alwaysOutside: false
+            },
+            color: ['red', 'red', 'blue', 'blue', 'gold', 'gold']
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+        chart.draw(view, options);
+    }
+    </script>
+
+    @*<textarea id="txtValor"></textarea>*@
+    <!-- begin #page-loader -->
+    <div id="page-loader" class="fade in"><span class="spinner"></span></div>
+    <!-- end #page-loader -->
+    <!-- begin #page-container -->
+    <div id="page-container" class="page-container fade page-sidebar-fixed page-header-fixed">
+        <!-- begin #header -->
+        <!-- end #header -->
+        <!-- begin #sidebar -->
+        <!-- end #sidebar -->
+        <!-- begin #content -->
+        <div id="content" class="content" style="zoom:80%;padding-bottom: 15px;">
+            <!-- begin breadcrumb -->
+            <!-- end breadcrumb -->
+            <!-- begin page-header -->
+            <!-- end page-header -->
+            <!-- begin alert -->
+            <!-- end alert -->
+            <style>
+                .page-header-fixed {
+                    padding-top: 5px;
+                }
+
+                .panel-title, .panel-title .pull-right {
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    font-size: 15px;
+                }
+
+                .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+                    font-size: 18px;
+                }
+
+                .badge, .label {
+                    font-size: 100%;
+                }
+
+                th {
+                    padding: 5px !important;
+                }
+
+                td {
+                    padding: 5px !important;
+                }
+
+                #columnchart_values {
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+                }
+
+                @@media screen and (max-width: 500px) {
+                    h1.panel-title {
+                        font-size: 40px !important;
+                    }
+                }
+
+                @@media screen and (max-width: 500px) {
+                    .total {
+                        font-size: 18px !important;
+                    }
+                }
+
+
+                @@media screen and (max-width: 500px) {
+                    div.panel-body div#columnchart_values::before div div div svg g:first-child g:last-child g g text {
+                        font-size: 13px !important;
+                    }
+                }
+
+                .highcharts-axis-labels > text {
+                    font-size: 10px !important;
+                }
+
+                highcharts-label > text > tspan {
+                    font-size: 8px !important;
+                }
+
+                .highcharts-text-outline {
+                    /*font-size: 10px !important;*/
+                }
+
+                .highcharts-legend-item > text {
+                    font-size: 9px !important;
+                }
+
+                .highcharts-legend-item .highcharts-point {
+                    width: 8px !important;
+                    height: 8px !important;
+                    margin-top: 2px !important;
+                }
+
+                .highcharts-tooltip {
+                    font-size: 10px !important;
+                    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif,
+                }
+
+                .dd {
+                    position: relative;
+                    height: 10px !important;
+                    width: 10px !important;
+                    display: block !important;
+                }
+
+                .ll {
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-size: 10px;
+                    color: red;
+                }
+            </style>
+
+            <h1 class="panel-title" style="text-align:center; color:black; width:100%; height:55px; font-size:80px; margin-top:10px">@(DateTime.Now.ToString("MMMM") + " " + DateTime.Now.ToString("yyyy"))</h1>
+            <!-- begin row -->
+            <div class="row">
+                <!-- begin col-6 -->
+                <div class="col-md-12">
+                    <div class="panel panel-inverse" data-sortable-id="index-6">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" style="text-align:center">Files por Counter</h4>
+                        </div>
+                        <div class="panel-body p-t-0" style="overflow: auto !important;">
+                            <table class="table table-valign-middle m-b-0" style="zoom:80%">
+                                <thead>
+                                    <tr style="text-align-last:center;text-transform:uppercase">
+                                        <th></th>
+                                        <th style="background:#00e600; font-size: 18px">Giuliana</th>
+                                        <th style="background:#FE2EF7; font-size: 18px">Marianne</th>
+                                        <th style="background:#e65c00; font-size: 18px">Yolanda</th>
+                                        <th style="background:#cebbff; font-size: 18px">Vilma</th>
+                                        <th style="background:#A845FF; font-size: 18px">Ingrid</th>
+                                        @*<th style="background:#a3f2a1; font-size: 18px">Vanessa</th>*@
+                                        @*<th style="background:#A845FF; font-size: 18px">Robert</th>*@
+                                        <th style="background:#ffbf00; font-size: 18px">Sofía</th>
+                                        <th style="background:#ffb1da; font-size: 18px">Felipe</th>
+                                        <th style="background:#fff400; font-size: 18px">Eliana</th>
+                                        <th style="background:#AA6739; font-size: 18px">Alejandro</th>
+                                        <th style="background:#8ef7ff; font-size: 18px">Alejandra</th>
+                                        @*<th style="background:#ffb1da; font-size: 18px">Javier</th>*@
+                                        @*<th style="background:#79a6d2; font-size: 18px">María</th>*@
+                                        <th style="background:#4CAF50; font-size: 18px">Gerardo</th>
+                                        @*<th style="background:#cc0044; font-size: 18px">Sharon</th>*@
+                                        @*<th style="background:#FF5722">Valeria</th>*@
+                                        @*<th style="background:#4CAF50">Fernanda</th>*@
+                                        @*<th style="background:#79a6d2; font-size: 18px">Evelyn</th>*@
+                                        @*<th style="background:#b3b3ff; font-size: 18px">Victoria</th>*@
+                                        @*<th style="background:#FE2EF7; font-size: 18px">Olga</th>*@
+                                        @*<th style="background:#46af2c; font-size: 18px">Arlette</th>*@
+                                        @*<th style="background:#fe7b2e; font-size: 18px">Edith</th>*@
+                                        @*<th style="background:#de65ff; font-size: 18px">Renzo</th>*@
+                                        @*<th style="background:#A845FF; font-size: 18px">Lola</th>*@
+                                        @*<th style="background:#cebbff; font-size: 18px">Joan</th>*@
+                                        @*<th style="background:#a3f2a1; font-size: 18px">Jesus</th>*@
+                                        <th style="background:#ED058B; font-size: 18px">Lizzy</th>
+                                        <th style="background:YELLOW; font-size: 18px"><strong style="color:black !important">TOTAL</strong></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr style="text-align:center;color:red">
+                                        <td><label class="label label-warning" style="color:black;background:Red"><strong> VACÍOS</strong></label></td>
+                                        <td class="GUILIANA" style="font-size: 18px;color:red">@item.GuilianaRojo</td>
+                                        <td class="MARIANNE" style="font-size: 18px;color:red">@item.MarianneRojo</td>
+                                        <td class="YOLANDA" style="font-size: 18px;color:red">@item.YolandaRojo</td>
+                                        <td class="VILMA" style="font-size: 18px;color:red">@item.VilmaRojo</td>
+                                        <td class="INGRID" style="font-size: 18px;color:red">@item.IngridRojo</td>
+                                        @*<td class="VANESSA" style="font-size: 18px;color:red">  @item.VanesaRojo</td>*@
+                                        @*<td class="ROBERT" style="font-size: 18px;color:red">   @item.RobertRojo</td>*@
+                                        <td class="SOFIA" style="font-size: 18px;color:red">    @item.SofiaRojo</td>
+                                        <td class="FELIPE" style="font-size: 18px;color:red">   @item.FelipeRojo </td>
+                                        <td class="ELIANA" style="font-size: 18px;color:red">@item.ElianaRojo</td>
+                                        <td class="ALEJANDRO" style="font-size: 18px;color:red">@item.AlejandroRojo</td>
+                                        <td class="ALEJANDRA" style="font-size: 18px;color:red">@item.AlejandraRojo</td>
+                                        @*<td class="JAVIER" style="font-size: 18px;color:red">   @item.JavierRojo</td>*@
+                                        @*<td class="MARIA" style="font-size: 18px;color:red">   @item.MariaRojo</td>*@
+                                        <td class="GERARDO" style="font-size: 18px;color:red">  @item.GerardoRojo </td>
+                                        @*<td class="SHARON" style="font-size: 18px;color:red">@item.SharonRojo</td>*@
+                                        @*<td class="VALERIA" style="font-size: 18px;color:red">  @item.ValeriaRojo</td>*@
+                                        @*<td class="FERNANDA" style="font-size: 18px;color:red"> @item.FernandaRojo </td>*@
+                                        @*<td class="EVELYN" style="font-size: 18px;color:red">   @item.EvelynRojo</td>*@
+                                        @*<td class="CATHERINE" style="font-size: 18px;color:red">@item.VictoriaRojo</td>*@
+                                        @*<td class="CATHERINE" style="font-size: 18px;color:red">@item.OlgaRojo</td>*@
+                                        @*<td class="CATHERINE" style="font-size: 18px;color:red">@item.ArletteRojo</td>*@
+                                        @*<td class="CATHERINE" style="font-size: 18px;color:red">@item.EdithRojo</td>*@
+                                        @*<td class="CATHERINE" style="font-size: 18px;color:red">@item.RenzoRojo</td>*@
+                                        @*<td class="CATHERINE" style="font-size: 18px;color:red">@item.LolaRojo</td>*@
+                                        @*<td class="CATHERINE" style="font-size: 18px;color:red">@item.JoanRojo</td>*@
+                                        @*<td class="CATHERINE" style="font-size: 18px;color:red">@item.JesusRojo</td>*@
+                                        <td class="LIZZY" style="font-size: 18px;color:red">@item.LizzyRojo</td>
+                                        <td><strong style="font-size:18px; color:red">@item.TotalRojo</strong></td>
+                                    </tr>
+                                    <tr style="text-align:center;color:blue">
+                                        <td><label class="label label-warning" style="color:black;background:#8BC34A"><strong> LLENOS</strong></label></td>
+                                        <td style="font-size: 18px;color:blue">@item.GuilianaVerde</td>
+                                        <td style="font-size: 18px;color:blue">@item.MarianneVerde</td>
+                                        <td style="font-size: 18px;color:blue">@item.YolandaVerde</td>
+                                        <td style="font-size: 18px;color:blue">@item.VilmaVerde</td>
+                                        <td style="font-size: 18px;color:blue">@item.IngridVerde</td>
+                                        @*<td style="font-size: 18px;color:blue">@item.VanesaVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.RobertVerde</td>*@
+                                        <td style="font-size: 18px;color:blue">@item.SofiaVerde</td>
+                                        <td style="font-size: 18px;color:blue">@item.FelipeVerde </td>
+                                        <td style="font-size: 18px;color:blue">@item.ElianaVerde</td>
+                                        <td style="font-size: 18px;color:blue">@item.AlejandroVerde</td>
+                                        <td style="font-size: 18px;color:blue">@item.AlejandraVerde</td>
+                                        @*<td style="font-size: 18px;color:blue">@item.JavierVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.MariaVerde</td>*@
+                                        <td style="font-size: 18px;color:blue">@item.GerardoVerde </td>
+                                        @*<td style="font-size: 18px;color:blue">@item.SharonVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.ValeriaVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.FernandaVerde </td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.EvelynVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.VictoriaVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.OlgaVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.ArletteVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.EdithVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.RenzoVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.LolaVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.JoanVerde</td>*@
+                                        @*<td style="font-size: 18px;color:blue">@item.JesusVerde</td>*@
+                                        <td style="font-size: 18px;color:blue">@item.LizzyVerde</td>
+                                        <td><strong style="font-size:18px;color:blue">@item.TotalVerde</strong> </td>
+                                    </tr>
+                                    <tr style="text-align:center">
+                                        <td><label class="label label-warning" style="color:black;background:yellow"><strong> TOTAL</strong><strong style="color: yellow">a</strong></label></td>
+                                        <td style="font-size: 18px">@item.GuilianaTotal</td>
+                                        <td style="font-size: 18px">@item.MarianneTotal</td>
+                                        <td style="font-size: 18px">@item.YolandaTotal</td>
+                                        <td style="font-size: 18px">@item.VilmaTotal</td>
+                                        <td style="font-size: 18px">@item.IngridTotal</td>
+                                        @*<td style="font-size: 18px">@item.VanesaTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.RobertTotal</td>*@
+                                        <td style="font-size: 18px">@item.SofiaTotal</td>
+                                        <td style="font-size: 18px">@item.FelipeTotal </td>
+                                        <td style="font-size: 18px">@item.ElianaTotal</td>
+                                        <td style="font-size: 18px">@item.AlejandroTotal</td>
+                                        <td style="font-size: 18px">@item.AlejandraTotal</td>
+                                        @*<td style="font-size: 18px">@item.JavierTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.MariaTotal</td>*@
+                                        <td style="font-size: 18px">@item.GerardoTotal </td>
+                                        @*<td style="font-size: 18px">@item.SharonTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.ValeriaTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.FernandaTotal </td>*@
+                                        @*<td style="font-size: 18px">@item.EvelynTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.VictoriaTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.OlgaTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.ArletteTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.EdithTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.RenzoTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.LolaTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.JoanTotal</td>*@
+                                        @*<td style="font-size: 18px">@item.JesusTotal</td>*@
+                                        <td style="font-size: 18px">@item.LizzyTotal</td>
+                                        <td><strong style="font-size:18px">@item.TotalVentas</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col-6 -->
+                <!-- begin col-6 -->
+
+                <div class="col-md-12">
+                    <div class="panel panel-inverse">
+                        <div class="panel-heading">
+                            <h4 class="panel-title" style="text-align:center">Venta por Counter</h4>
+                        </div>
+                        <div class="panel-body" style="padding: 5px !important">
+                            @*<div id="columnchart_values" class="col-md-12">
+                                </div>*@
+
+                            <div id="container" style="min-width: 310px; height: 270px; margin: 0 auto">
+                            </div>
+
+                            <table id="datatable" hidden>
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Meta</th>
+                                        <th>Venta</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>GUILIANA</th>
+                                        <td>140000</td>
+                                        <td>@item.Guiliana.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>MARIANNE</th>
+                                        <td>140000</td>
+                                        <td>@item.Marianne.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>YOLANDA</th>
+                                        <td>90000</td>
+                                        <td>@item.Yolanda.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>VILMA</th>
+                                        <td>70000</td>
+                                        <td>@item.Vilma.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>INGRID</th>
+                                        <td>65000</td>
+                                        <td>@item.Ingrid.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>SOFIA</th>
+                                        <td>65000</td>
+                                        <td>@item.Sofia.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>FELIPE</th>
+                                        <td>60000</td>
+                                        <td>@item.Felipe.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ELIANA</th>
+                                        <td>50000</td>
+                                        <td>@item.Eliana.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ALEJANDRO</th>
+                                        <td>40000</td>
+                                        <td>@item.Alejandro.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>ALEJANDRA</th>
+                                        <td>30000</td>
+                                        <td>@item.Alejandra.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>GERARDO</th>
+                                        <td>20000</td>
+                                        <td>@item.Gerardo.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    <tr>
+                                        <th>LIZZY</th>
+                                        <td>0</td>
+                                        <td>@item.Lizzy.ToString().Replace(",", ".")</td>
+                                    </tr>
+                                    @*<tr>
+            <th>JESUS</th>
+            <td>0</td>
+            <td>@item.Jesus.ToString().Replace(",", ".")</td>
+        </tr>*@
+                                    @*<tr>
+                                        <th>MARIA</th>
+                                        <td>0</td>
+                                        <td>@item.Maria.ToString().Replace(",", ".")</td>
+                                    </tr>*@
+                                    @*<tr>
+            <th>RENZO</th>
+            <td>0</td>
+            <td>@item.Renzo.ToString().Replace(",", ".")</td>
+        </tr>*@
+                                    @*<tr>
+            <th>SHARON</th>
+            <td>0</td>
+            <td>@item.Sharon.ToString().Replace(",", ".")</td>
+        </tr>*@
+                                </tbody>
+                            </table>
+                        </div>
+                        @*<div class="panel-heading">
+                                <h4 class="panel-title" style="text-align:center; font-size:20px">Total de Ventas :  $ <label style="font-size:20px; color:white">@item.TotalBarras.Value.ToString("N")</label></h4>
+                                <h4 class="panel-title" style="text-align:center; font-size:20px">Ventas del día anterior :  $ <label style="font-size:20px; color:white">@item.TotalAyer.Value.ToString("N")</label></h4>
+                            </div>*@
+                    </div>
+                </div>
+                <!-- end col-6 -->
+            </div>
+            <!-- end row -->
+            <!-- begin row -->
+            <!-- end row -->
+            <!-- begin row -->
+            <div class="panel-heading" style="padding-top: 0px;padding-bottom: 0px;">
+                <h4 class="panel-title total" style="text-align:center; font-size:22px; color:black; font-weight: 800 !important">Total de Ventas :  $ <label class="total hoy" style="font-size:22px; color:black; font-weight: bold">@item.TotalBarras.Value.ToString("N")</label></h4>
+                <h4 class="panel-title total" style="text-align:center; font-size:22px; color:red; font-weight: 800 !important">Ventas del día anterior :  $ <label class="ayer" style="font-size:22px; color:red; font-weight: bold"></label></h4>
+                <input type="hidden" id="ocultito" value="" />
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end #content -->
+        <!-- begin theme-panel -->
+        <div class="theme-panel">
+            <a href="javascript:;" data-click="theme-panel-expand" class="theme-collapse-btn"><i class="fa fa-cog"></i></a>
+            <div class="theme-panel-content">
+                <h5 class="m-t-0">Color Theme</h5>
+                <ul class="theme-list clearfix">
+                    <li class="active"><a href="javascript:;" class="bg-green" data-theme="default" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-red" data-theme="red" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-blue" data-theme="blue" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-purple" data-theme="purple" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-orange" data-theme="orange" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-black" data-theme="black" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black">&nbsp;</a></li>
+                </ul>
+                <div class="divider"></div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Header Styling</div>
+                    <div class="col-md-7">
+                        <select name="header-styling" class="form-control input-sm">
+                            <option value="1">default</option>
+                            <option value="2">inverse</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label">Header</div>
+                    <div class="col-md-7">
+                        <select name="header-fixed" class="form-control input-sm">
+                            <option value="1">fixed</option>
+                            <option value="2">default</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Sidebar Styling</div>
+                    <div class="col-md-7">
+                        <select name="sidebar-styling" class="form-control input-sm">
+                            <option value="1">default</option>
+                            <option value="2">grid</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label">Sidebar</div>
+                    <div class="col-md-7">
+                        <select name="sidebar-fixed" class="form-control input-sm">
+                            <option value="1">fixed</option>
+                            <option value="2">default</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Sidebar Gradient</div>
+                    <div class="col-md-7">
+                        <select name="content-gradient" class="form-control input-sm">
+                            <option value="1">disabled</option>
+                            <option value="2">enabled</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-5 control-label double-line">Content Styling</div>
+                    <div class="col-md-7">
+                        <select name="content-styling" class="form-control input-sm">
+                            <option value="1">default</option>
+                            <option value="2">black</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row m-t-10">
+                    <div class="col-md-12">
+                        <a href="#" class="btn btn-inverse btn-block btn-sm" data-click="reset-local-storage"><i class="fa fa-refresh m-r-3"></i> Reset Local Storage</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end theme-panel -->
+        <!-- begin scroll to top btn -->
+        <a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+        <!-- end scroll to top btn -->
+    </div>
+
+    <script type="text/javascript">
+        function cero(n) {
+            var x = parseFloat(n.replace(/,/g, ''));
+            var r = (x == '-Infinity' ? 0.0 : x == 'Infinity' ? 0.0 : x == 'NaN' ? 0.0 : x);
+            return r;
+        }
+
+        function cerot(x) {
+            if (!(x == x)) {
+                return 0.0;
+            }
+            var r = (x == '-Infinity' ? 0.0 : x == 'Infinity' ? 0.0 : x == 'NaN' ? 0.0 : x);
+            return r;
+        }
+
+        function salte() {
+            $('g.highcharts-series-0').each(function () {
+                $('tspan.highcharts-text-outline', this).each(function (i) {
+                    var bb = $(this).text();
+                    console.log('meta (' + i + ') => ' + bb.replace(/,/g, '') + ' ');
+                });
+            });
+
+            $('g.highcharts-series-1').each(function () {
+                $('tspan.highcharts-text-outline', this).each(function (i) {
+                    var a = $('g.highcharts-series-0 > g.highcharts-data-label-color-' + i + ' > text > tspan.highcharts-text-outline').text();
+                    var b = $(this).text();
+                    var aa = cero(a);
+                    var bb = cero(b);
+                    var cc = Math.round(((bb / aa) * 100) * 100) / 100;
+
+                    //var tt = '<div class="dd"><tspan x="5" y="16" class="ll">' + cc + '%</tspan></div>'
+                    //$(tt).appendTo('g.highcharts-series-1 > g.highcharts-data-label-color-' + i)
+                    //console.log('posi => ' + JSON.stringify($('.panel-title').position()));
+
+                    var $tgt = d3.select('g.highcharts-series-1 > g.highcharts-data-label-color-' + i);
+                    var $txt = $tgt.append('text');
+                    var $tsp = $txt.append('tspan');
+
+                    $txt.style({ 'font-size': '10px', 'font-family': 'Arial', 'fill': 'red', 'font-weight': '800', 'text-align': 'center' });
+                    $txt.attr('x', '4');
+                    $txt.attr('y', '-3');
+
+                    $tsp.text(cerot(cc) + '%');
+
+                    console.log('venta (' + i + ') => ' + bb + ' - ' + aa + ' = ' + cc + '%');
+                });
+            });
+        }
+
+        function formatDecimal(num) {
+            if (isNaN(num)) {
+                return 0.00;
+            }
+            return accounting.formatMoney(num, { symbol: "PEN", format: "%v" });
+        }
+
+        function save() {
+            var param = {
+                monto: cero($('.hoy').text())
+            }
+
+            $.ajax({
+                type: 'POST',
+                url: '/CIP/SaveDiaAnterior',
+                data: param,
+                async: false,
+                success: function (data) {
+                    if (data.status) {
+                        console.log('SE REGISTRO MONTO DE AYER');
+                        console.log(JSON.stringify(param));
+                    }
+                    else {
+                        console.log('FALLO AL REGISTRAR');
+                        console.log(JSON.stringify(param));
+                    }
+                },
+                error: function (err) {
+                    console.log('ERROR MY DEAR: ' + JSON.stringify(err));
+                }
+            });
+        }
+
+        function get() {
+            $.ajax({
+                type: 'GET',
+                url: '/CIP/GetDiaAnterior',
+                data: {},
+                async: false,
+                success: function (data) {
+                    if (data != null) {
+                        $('.ayer').text(formatDecimal(data));
+                        $('#ocultito').val(formatDecimal(data));
+                        console.log('MONTO DEl DIA ANTERIOR $' + JSON.stringify(formatDecimal(data)));
+                    }
+                    else {
+                        $('.ayer').text('0.00');
+                    }
+                },
+                error: function (err) {
+                    console.log('ERROR MY DEAR: ' + JSON.stringify(err));
+                }
+            });
+        }
+
+
+        //var put = setInterval(function () {
+        //    var horaAct = new Date().getHours();
+        //    var minuAct = new Date().getMinutes();
+        //    //localStorage['cip'] = $('.hoy').text();
+        //    window.name = 'ALL THE LEAVES IS BROWN AND THE SKY IS GRAY';
+
+        //    if ('9' <= horaAct && horaAct <= '9') {
+        //        if ('40' <= minuAct && minuAct <= '59') {
+        //            //var ourhouse = localStorage['cip'] || '0.00';
+        //            $('#ocultito').val(window.name);
+        //            //$('.ayer').text(window.name);
+        //        }
+        //    }
+        //}, 1000)
+
+        //var alarma = setInterval(function () {
+        //    var horaAct = new Date().getHours();
+        //    var minuAct = new Date().getMinutes();
+
+        //    if (horaAct >= horaAlarma) {
+        //        if (minuAct >= minuAlarma) {
+        //            var hoy = $('#ocultito').text() + ' a las ' + horaAct + ':' + (minuAct < 10 ? '0' + minuAct : '' + minuAct);
+        //            $('.ayer').html(hoy);
+        //        }
+        //    }
+        //}, 1000)
+
+        function tanque() {
+            var horaAct = new Date().getHours();
+            var minuAct = new Date().getMinutes();
+
+            if (horaAct == '22') {
+                if (minuAct >= '01' && minuAct <= '03') {
+                    save();
+                    console.log('MONTO DIA ANTERIOR, INGRESO A LAS ' + horaAct + ':' + minuAct);
+                }
+            }
+        };
+    </script>
+}
+<!-- end page container -->
+<!-- ================== BEGIN BASE JS ================== -->
+<script src="~/color/assets/plugins/jquery/jquery-1.9.1.min.js"></script>
+<script src="~/color/assets/plugins/jquery/jquery-migrate-1.1.0.min.js"></script>
+<script src="~/color/assets/plugins/jquery-ui/ui/minified/jquery-ui.min.js"></script>
+<script src="~/color/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<!--[if lt IE 9]>
+    <script src="assets/crossbrowserjs/html5shiv.js"></script>
+    <script src="assets/crossbrowserjs/respond.min.js"></script>
+    <script src="assets/crossbrowserjs/excanvas.min.js"></script>
+<![endif]-->
+<script src="~/color/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="~/color/assets/plugins/jquery-cookie/jquery.cookie.js"></script>
+<!-- ================== END BASE JS ================== -->
+<!-- ================== BEGIN PAGE LEVEL JS ================== -->
+<script src="~/color/cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js"></script>
+<script src="~/color/assets/plugins/nvd3/build/nv.d3.js"></script>
+<script src="~/color/assets/js/chart-d3.demo.min.js"></script>
+<script src="~/color/assets/js/apps.min.js"></script>
+<script src="~/Scripts/index.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.js"></script>
+<!-- ================== END PAGE LEVEL JS ================== -->
+
+<script>
+    $(document).ready(function () {
+        App.init();
+        ChartNvd3.init();
+        tanque();
+        salte();
+        get();
+    });
+</script>

@@ -1,0 +1,936 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="bd_AgviajesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <Function Name="pantalla" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="pantalla_facturada" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="Pantalla2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="pantalla3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_pantalla_facturada" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="VENTASPORMES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="bd_AgviajesModelStoreContainer" />
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="bd_AgviajesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="bd_AgviajesEntities" annotation:LazyLoadingEnabled="true" >
+          <FunctionImport Name="pantalla" ReturnType="Collection(bd_AgviajesModel.pantalla_Result)" />
+          <FunctionImport Name="Pantalla2" ReturnType="Collection(bd_AgviajesModel.Pantalla2_Result)" />
+          <FunctionImport Name="pantalla3" ReturnType="Collection(bd_AgviajesModel.pantalla3_Result)" />
+          <FunctionImport Name="VENTASPORMES" ReturnType="Collection(bd_AgviajesModel.VENTASPORMES_Result)" />
+          <FunctionImport Name="sp_pantalla_facturada" ReturnType="Collection(bd_AgviajesModel.sp_pantalla_facturada_Result)" />
+          <FunctionImport Name="pantalla_facturada" ReturnType="Collection(bd_AgviajesModel.pantalla_facturada_Result)" />
+        </EntityContainer>
+        <ComplexType Name="pantalla_Result">
+          <Property Type="Int32" Name="VanesaRojo" Nullable="true" />
+          <Property Type="Int32" Name="VanesaVerde" Nullable="true" />
+          <Property Type="Int32" Name="VanesaTotal" Nullable="true" />
+          <Property Type="Int32" Name="FelipeRojo" Nullable="true" />
+          <Property Type="Int32" Name="FelipeVerde" Nullable="true" />
+          <Property Type="Int32" Name="FelipeTotal" Nullable="true" />
+          <Property Type="Int32" Name="RobertRojo" Nullable="true" />
+          <Property Type="Int32" Name="RobertVerde" Nullable="true" />
+          <Property Type="Int32" Name="RobertTotal" Nullable="true" />
+          <Property Type="Int32" Name="DeborahRojo" Nullable="true" />
+          <Property Type="Int32" Name="DeborahVerde" Nullable="true" />
+          <Property Type="Int32" Name="DeborahTotal" Nullable="true" />
+          <Property Type="Int32" Name="SofiaRojo" Nullable="true" />
+          <Property Type="Int32" Name="SofiaVerde" Nullable="true" />
+          <Property Type="Int32" Name="SofiaTotal" Nullable="true" />
+          <Property Type="Int32" Name="JavierRojo" Nullable="true" />
+          <Property Type="Int32" Name="JavierVerde" Nullable="true" />
+          <Property Type="Int32" Name="JavierTotal" Nullable="true" />
+          <Property Type="Int32" Name="GerardoRojo" Nullable="true" />
+          <Property Type="Int32" Name="GerardoVerde" Nullable="true" />
+          <Property Type="Int32" Name="GerardoTotal" Nullable="true" />
+          <Property Type="Int32" Name="RosanaRojo" Nullable="true" />
+          <Property Type="Int32" Name="RosanaVerde" Nullable="true" />
+          <Property Type="Int32" Name="RosanaTotal" Nullable="true" />
+          <Property Type="Int32" Name="ValeriaRojo" Nullable="true" />
+          <Property Type="Int32" Name="ValeriaVerde" Nullable="true" />
+          <Property Type="Int32" Name="ValeriaTotal" Nullable="true" />
+          <Property Type="Int32" Name="FernandaRojo" Nullable="true" />
+          <Property Type="Int32" Name="FernandaVerde" Nullable="true" />
+          <Property Type="Int32" Name="FernandaTotal" Nullable="true" />
+          <Property Type="Int32" Name="EvelynRojo" Nullable="true" />
+          <Property Type="Int32" Name="EvelynVerde" Nullable="true" />
+          <Property Type="Int32" Name="EvelynTotal" Nullable="true" />
+          <Property Type="Int32" Name="CatherineRojo" Nullable="true" />
+          <Property Type="Int32" Name="CatherineVerde" Nullable="true" />
+          <Property Type="Int32" Name="CatherineTotal" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaRojo" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaVerde" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaTotal" Nullable="true" />
+          <Property Type="Int32" Name="VictoriaRojo" Nullable="true" />
+          <Property Type="Int32" Name="VictoriaVerde" Nullable="true" />
+          <Property Type="Int32" Name="VictoriaTotal" Nullable="true" />
+          <Property Type="Int32" Name="OlgaRojo" Nullable="true" />
+          <Property Type="Int32" Name="OlgaVerde" Nullable="true" />
+          <Property Type="Int32" Name="OlgaTotal" Nullable="true" />
+          <Property Type="Int32" Name="ArletteRojo" Nullable="true" />
+          <Property Type="Int32" Name="ArletteVerde" Nullable="true" />
+          <Property Type="Int32" Name="ArletteTotal" Nullable="true" />
+          <Property Type="Int32" Name="EdithRojo" Nullable="true" />
+          <Property Type="Int32" Name="EdithVerde" Nullable="true" />
+          <Property Type="Int32" Name="EdithTotal" Nullable="true" />
+          <Property Type="Int32" Name="SharonRojo" Nullable="true" />
+          <Property Type="Int32" Name="SharonVerde" Nullable="true" />
+          <Property Type="Int32" Name="SharonTotal" Nullable="true" />
+          <Property Type="Int32" Name="ElianaRojo" Nullable="true" />
+          <Property Type="Int32" Name="ElianaVerde" Nullable="true" />
+          <Property Type="Int32" Name="ElianaTotal" Nullable="true" />
+          <Property Type="Int32" Name="MariaRojo" Nullable="true" />
+          <Property Type="Int32" Name="MariaVerde" Nullable="true" />
+          <Property Type="Int32" Name="MariaTotal" Nullable="true" />
+          <Property Type="Int32" Name="MarianneRojo" Nullable="true" />
+          <Property Type="Int32" Name="MarianneVerde" Nullable="true" />
+          <Property Type="Int32" Name="MarianneTotal" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraRojo" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraVerde" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraTotal" Nullable="true" />
+          <Property Type="Int32" Name="YolandaRojo" Nullable="true" />
+          <Property Type="Int32" Name="YolandaVerde" Nullable="true" />
+          <Property Type="Int32" Name="YolandaTotal" Nullable="true" />
+          <Property Type="Int32" Name="RenzoRojo" Nullable="true" />
+          <Property Type="Int32" Name="RenzoVerde" Nullable="true" />
+          <Property Type="Int32" Name="RenzoTotal" Nullable="true" />
+          <Property Type="Int32" Name="LolaRojo" Nullable="true" />
+          <Property Type="Int32" Name="LolaVerde" Nullable="true" />
+          <Property Type="Int32" Name="LolaTotal" Nullable="true" />
+          <Property Type="Int32" Name="JoanRojo" Nullable="true" />
+          <Property Type="Int32" Name="JoanVerde" Nullable="true" />
+          <Property Type="Int32" Name="JoanTotal" Nullable="true" />
+          <Property Type="Int32" Name="JesusRojo" Nullable="true" />
+          <Property Type="Int32" Name="JesusVerde" Nullable="true" />
+          <Property Type="Int32" Name="JesusTotal" Nullable="true" />
+          <Property Type="Int32" Name="AlejandroRojo" Nullable="true" />
+          <Property Type="Int32" Name="AlejandroVerde" Nullable="true" />
+          <Property Type="Int32" Name="AlejandroTotal" Nullable="true" />
+          <Property Type="Int32" Name="IngridRojo" Nullable="true" />
+          <Property Type="Int32" Name="IngridVerde" Nullable="true" />
+          <Property Type="Int32" Name="IngridTotal" Nullable="true" />
+          <Property Type="Int32" Name="VilmaRojo" Nullable="true" />
+          <Property Type="Int32" Name="VilmaVerde" Nullable="true" />
+          <Property Type="Int32" Name="VilmaTotal" Nullable="true" />
+          <Property Type="Int32" Name="LizzyRojo" Nullable="true" />
+          <Property Type="Int32" Name="LizzyVerde" Nullable="true" />
+          <Property Type="Int32" Name="LizzyTotal" Nullable="true" />
+          <Property Type="Double" Name="Vanesa" Nullable="true" />
+          <Property Type="Double" Name="Felipe" Nullable="true" />
+          <Property Type="Double" Name="Robert" Nullable="true" />
+          <Property Type="Double" Name="Deborah" Nullable="true" />
+          <Property Type="Double" Name="Sofia" Nullable="true" />
+          <Property Type="Double" Name="Javier" Nullable="true" />
+          <Property Type="Double" Name="Gerardo" Nullable="true" />
+          <Property Type="Double" Name="Rosana" Nullable="true" />
+          <Property Type="Double" Name="Valeria" Nullable="true" />
+          <Property Type="Double" Name="Fernanda" Nullable="true" />
+          <Property Type="Double" Name="Evelyn" Nullable="true" />
+          <Property Type="Double" Name="Catherine" Nullable="true" />
+          <Property Type="Double" Name="Guiliana" Nullable="true" />
+          <Property Type="Double" Name="Victoria" Nullable="true" />
+          <Property Type="Double" Name="Olga" Nullable="true" />
+          <Property Type="Double" Name="Arlette" Nullable="true" />
+          <Property Type="Double" Name="Edith" Nullable="true" />
+          <Property Type="Double" Name="Sharon" Nullable="true" />
+          <Property Type="Double" Name="Eliana" Nullable="true" />
+          <Property Type="Double" Name="Maria" Nullable="true" />
+          <Property Type="Double" Name="Marianne" Nullable="true" />
+          <Property Type="Double" Name="Alejandra" Nullable="true" />
+          <Property Type="Double" Name="Yolanda" Nullable="true" />
+          <Property Type="Double" Name="Renzo" Nullable="true" />
+          <Property Type="Double" Name="Lola" Nullable="true" />
+          <Property Type="Double" Name="Joan" Nullable="true" />
+          <Property Type="Double" Name="Jesus" Nullable="true" />
+          <Property Type="Double" Name="Alejandro" Nullable="true" />
+          <Property Type="Double" Name="Ingrid" Nullable="true" />
+          <Property Type="Double" Name="Vilma" Nullable="true" />
+          <Property Type="Double" Name="Lizzy" Nullable="true" />
+          <Property Type="Int32" Name="TotalRojo" Nullable="true" />
+          <Property Type="Int32" Name="TotalVerde" Nullable="true" />
+          <Property Type="Int32" Name="TotalVentas" Nullable="true" />
+          <Property Type="Double" Name="TotalBarras" Nullable="true" />
+          <Property Type="Double" Name="TotalAyer" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="Pantalla2_Result">
+          <Property Type="Int32" Name="VanesaRojo" Nullable="true" />
+          <Property Type="Int32" Name="VanesaVerde" Nullable="true" />
+          <Property Type="Int32" Name="VanesaTotal" Nullable="true" />
+          <Property Type="Int32" Name="FelipeRojo" Nullable="true" />
+          <Property Type="Int32" Name="FelipeVerde" Nullable="true" />
+          <Property Type="Int32" Name="FelipeTotal" Nullable="true" />
+          <Property Type="Int32" Name="RobertRojo" Nullable="true" />
+          <Property Type="Int32" Name="RobertVerde" Nullable="true" />
+          <Property Type="Int32" Name="RobertTotal" Nullable="true" />
+          <Property Type="Int32" Name="DeborahRojo" Nullable="true" />
+          <Property Type="Int32" Name="DeborahVerde" Nullable="true" />
+          <Property Type="Int32" Name="DeborahTotal" Nullable="true" />
+          <Property Type="Int32" Name="SofiaRojo" Nullable="true" />
+          <Property Type="Int32" Name="SofiaVerde" Nullable="true" />
+          <Property Type="Int32" Name="SofiaTotal" Nullable="true" />
+          <Property Type="Int32" Name="JavierRojo" Nullable="true" />
+          <Property Type="Int32" Name="JavierVerde" Nullable="true" />
+          <Property Type="Int32" Name="JavierTotal" Nullable="true" />
+          <Property Type="Int32" Name="GerardoRojo" Nullable="true" />
+          <Property Type="Int32" Name="GerardoVerde" Nullable="true" />
+          <Property Type="Int32" Name="GerardoTotal" Nullable="true" />
+          <Property Type="Int32" Name="RosanaRojo" Nullable="true" />
+          <Property Type="Int32" Name="RosanaVerde" Nullable="true" />
+          <Property Type="Int32" Name="RosanaTotal" Nullable="true" />
+          <Property Type="Int32" Name="ValeriaRojo" Nullable="true" />
+          <Property Type="Int32" Name="ValeriaVerde" Nullable="true" />
+          <Property Type="Int32" Name="ValeriaTotal" Nullable="true" />
+          <Property Type="Int32" Name="FernandaRojo" Nullable="true" />
+          <Property Type="Int32" Name="FernandaVerde" Nullable="true" />
+          <Property Type="Int32" Name="FernandaTotal" Nullable="true" />
+          <Property Type="Int32" Name="EvelynRojo" Nullable="true" />
+          <Property Type="Int32" Name="EvelynVerde" Nullable="true" />
+          <Property Type="Int32" Name="EvelynTotal" Nullable="true" />
+          <Property Type="Int32" Name="CatherineRojo" Nullable="true" />
+          <Property Type="Int32" Name="CatherineVerde" Nullable="true" />
+          <Property Type="Int32" Name="CatherineTotal" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaRojo" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaVerde" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaTotal" Nullable="true" />
+          <Property Type="Int32" Name="VictoriaRojo" Nullable="true" />
+          <Property Type="Int32" Name="VictoriaVerde" Nullable="true" />
+          <Property Type="Int32" Name="VictoriaTotal" Nullable="true" />
+          <Property Type="Int32" Name="OlgaRojo" Nullable="true" />
+          <Property Type="Int32" Name="OlgaVerde" Nullable="true" />
+          <Property Type="Int32" Name="OlgaTotal" Nullable="true" />
+          <Property Type="Int32" Name="ArletteRojo" Nullable="true" />
+          <Property Type="Int32" Name="ArletteVerde" Nullable="true" />
+          <Property Type="Int32" Name="ArletteTotal" Nullable="true" />
+          <Property Type="Int32" Name="EdithRojo" Nullable="true" />
+          <Property Type="Int32" Name="EdithVerde" Nullable="true" />
+          <Property Type="Int32" Name="EdithTotal" Nullable="true" />
+          <Property Type="Int32" Name="SharonRojo" Nullable="true" />
+          <Property Type="Int32" Name="SharonVerde" Nullable="true" />
+          <Property Type="Int32" Name="SharonTotal" Nullable="true" />
+          <Property Type="Int32" Name="ElianaRojo" Nullable="true" />
+          <Property Type="Int32" Name="ElianaVerde" Nullable="true" />
+          <Property Type="Int32" Name="ElianaTotal" Nullable="true" />
+          <Property Type="Int32" Name="MariaRojo" Nullable="true" />
+          <Property Type="Int32" Name="MariaVerde" Nullable="true" />
+          <Property Type="Int32" Name="MariaTotal" Nullable="true" />
+          <Property Type="Int32" Name="MarianneRojo" Nullable="true" />
+          <Property Type="Int32" Name="MarianneVerde" Nullable="true" />
+          <Property Type="Int32" Name="MarianneTotal" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraRojo" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraVerde" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraTotal" Nullable="true" />
+          <Property Type="Int32" Name="YolandaRojo" Nullable="true" />
+          <Property Type="Int32" Name="YolandaVerde" Nullable="true" />
+          <Property Type="Int32" Name="YolandaTotal" Nullable="true" />
+          <Property Type="Double" Name="Vanesa" Nullable="true" />
+          <Property Type="Double" Name="Felipe" Nullable="true" />
+          <Property Type="Double" Name="Robert" Nullable="true" />
+          <Property Type="Double" Name="Deborah" Nullable="true" />
+          <Property Type="Double" Name="Sofia" Nullable="true" />
+          <Property Type="Double" Name="Javier" Nullable="true" />
+          <Property Type="Double" Name="Gerardo" Nullable="true" />
+          <Property Type="Double" Name="Rosana" Nullable="true" />
+          <Property Type="Double" Name="Valeria" Nullable="true" />
+          <Property Type="Double" Name="Fernanda" Nullable="true" />
+          <Property Type="Double" Name="Evelyn" Nullable="true" />
+          <Property Type="Double" Name="Catherine" Nullable="true" />
+          <Property Type="Double" Name="Guiliana" Nullable="true" />
+          <Property Type="Double" Name="Victoria" Nullable="true" />
+          <Property Type="Double" Name="Olga" Nullable="true" />
+          <Property Type="Double" Name="Arlette" Nullable="true" />
+          <Property Type="Double" Name="Edith" Nullable="true" />
+          <Property Type="Double" Name="Sharon" Nullable="true" />
+          <Property Type="Double" Name="Eliana" Nullable="true" />
+          <Property Type="Double" Name="Maria" Nullable="true" />
+          <Property Type="Double" Name="Marianne" Nullable="true" />
+          <Property Type="Double" Name="Alejandra" Nullable="true" />
+          <Property Type="Double" Name="Yolanda" Nullable="true" />
+          <Property Type="Int32" Name="TotalRojo" Nullable="true" />
+          <Property Type="Int32" Name="TotalVerde" Nullable="true" />
+          <Property Type="Int32" Name="TotalVentas" Nullable="true" />
+          <Property Type="Double" Name="TotalBarras" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="pantalla3_Result">
+          <Property Type="Int32" Name="VanesaRojo" Nullable="true" />
+          <Property Type="Int32" Name="VanesaVerde" Nullable="true" />
+          <Property Type="Int32" Name="VanesaTotal" Nullable="true" />
+          <Property Type="Int32" Name="FelipeRojo" Nullable="true" />
+          <Property Type="Int32" Name="FelipeVerde" Nullable="true" />
+          <Property Type="Int32" Name="FelipeTotal" Nullable="true" />
+          <Property Type="Int32" Name="RobertRojo" Nullable="true" />
+          <Property Type="Int32" Name="RobertVerde" Nullable="true" />
+          <Property Type="Int32" Name="RobertTotal" Nullable="true" />
+          <Property Type="Int32" Name="DeborahRojo" Nullable="true" />
+          <Property Type="Int32" Name="DeborahVerde" Nullable="true" />
+          <Property Type="Int32" Name="DeborahTotal" Nullable="true" />
+          <Property Type="Int32" Name="SofiaRojo" Nullable="true" />
+          <Property Type="Int32" Name="SofiaVerde" Nullable="true" />
+          <Property Type="Int32" Name="SofiaTotal" Nullable="true" />
+          <Property Type="Int32" Name="JavierRojo" Nullable="true" />
+          <Property Type="Int32" Name="JavierVerde" Nullable="true" />
+          <Property Type="Int32" Name="JavierTotal" Nullable="true" />
+          <Property Type="Int32" Name="GerardoRojo" Nullable="true" />
+          <Property Type="Int32" Name="GerardoVerde" Nullable="true" />
+          <Property Type="Int32" Name="GerardoTotal" Nullable="true" />
+          <Property Type="Int32" Name="RosanaRojo" Nullable="true" />
+          <Property Type="Int32" Name="RosanaVerde" Nullable="true" />
+          <Property Type="Int32" Name="RosanaTotal" Nullable="true" />
+          <Property Type="Int32" Name="ValeriaRojo" Nullable="true" />
+          <Property Type="Int32" Name="ValeriaVerde" Nullable="true" />
+          <Property Type="Int32" Name="ValeriaTotal" Nullable="true" />
+          <Property Type="Int32" Name="FernandaRojo" Nullable="true" />
+          <Property Type="Int32" Name="FernandaVerde" Nullable="true" />
+          <Property Type="Int32" Name="FernandaTotal" Nullable="true" />
+          <Property Type="Int32" Name="EvelynRojo" Nullable="true" />
+          <Property Type="Int32" Name="EvelynVerde" Nullable="true" />
+          <Property Type="Int32" Name="EvelynTotal" Nullable="true" />
+          <Property Type="Int32" Name="CatherineRojo" Nullable="true" />
+          <Property Type="Int32" Name="CatherineVerde" Nullable="true" />
+          <Property Type="Int32" Name="CatherineTotal" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaRojo" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaVerde" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaTotal" Nullable="true" />
+          <Property Type="Int32" Name="VictoriaRojo" Nullable="true" />
+          <Property Type="Int32" Name="VictoriaVerde" Nullable="true" />
+          <Property Type="Int32" Name="VictoriaTotal" Nullable="true" />
+          <Property Type="Int32" Name="OlgaRojo" Nullable="true" />
+          <Property Type="Int32" Name="OlgaVerde" Nullable="true" />
+          <Property Type="Int32" Name="OlgaTotal" Nullable="true" />
+          <Property Type="Int32" Name="ArletteRojo" Nullable="true" />
+          <Property Type="Int32" Name="ArletteVerde" Nullable="true" />
+          <Property Type="Int32" Name="ArletteTotal" Nullable="true" />
+          <Property Type="Int32" Name="EdithRojo" Nullable="true" />
+          <Property Type="Int32" Name="EdithVerde" Nullable="true" />
+          <Property Type="Int32" Name="EdithTotal" Nullable="true" />
+          <Property Type="Int32" Name="SharonRojo" Nullable="true" />
+          <Property Type="Int32" Name="SharonVerde" Nullable="true" />
+          <Property Type="Int32" Name="SharonTotal" Nullable="true" />
+          <Property Type="Int32" Name="ElianaRojo" Nullable="true" />
+          <Property Type="Int32" Name="ElianaVerde" Nullable="true" />
+          <Property Type="Int32" Name="ElianaTotal" Nullable="true" />
+          <Property Type="Int32" Name="MariaRojo" Nullable="true" />
+          <Property Type="Int32" Name="MariaVerde" Nullable="true" />
+          <Property Type="Int32" Name="MariaTotal" Nullable="true" />
+          <Property Type="Int32" Name="MarianneRojo" Nullable="true" />
+          <Property Type="Int32" Name="MarianneVerde" Nullable="true" />
+          <Property Type="Int32" Name="MarianneTotal" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraRojo" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraVerde" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraTotal" Nullable="true" />
+          <Property Type="Int32" Name="YolandaRojo" Nullable="true" />
+          <Property Type="Int32" Name="YolandaVerde" Nullable="true" />
+          <Property Type="Int32" Name="YolandaTotal" Nullable="true" />
+          <Property Type="Double" Name="Vanesa" Nullable="true" />
+          <Property Type="Double" Name="Felipe" Nullable="true" />
+          <Property Type="Double" Name="Robert" Nullable="true" />
+          <Property Type="Double" Name="Deborah" Nullable="true" />
+          <Property Type="Double" Name="Sofia" Nullable="true" />
+          <Property Type="Double" Name="Javier" Nullable="true" />
+          <Property Type="Double" Name="Gerardo" Nullable="true" />
+          <Property Type="Double" Name="Rosana" Nullable="true" />
+          <Property Type="Double" Name="Valeria" Nullable="true" />
+          <Property Type="Double" Name="Fernanda" Nullable="true" />
+          <Property Type="Double" Name="Evelyn" Nullable="true" />
+          <Property Type="Double" Name="Catherine" Nullable="true" />
+          <Property Type="Double" Name="Guiliana" Nullable="true" />
+          <Property Type="Double" Name="Victoria" Nullable="true" />
+          <Property Type="Double" Name="Olga" Nullable="true" />
+          <Property Type="Double" Name="Arlette" Nullable="true" />
+          <Property Type="Double" Name="Edith" Nullable="true" />
+          <Property Type="Double" Name="Sharon" Nullable="true" />
+          <Property Type="Double" Name="Eliana" Nullable="true" />
+          <Property Type="Double" Name="Maria" Nullable="true" />
+          <Property Type="Double" Name="Marianne" Nullable="true" />
+          <Property Type="Double" Name="Alejandra" Nullable="true" />
+          <Property Type="Double" Name="Yolanda" Nullable="true" />
+          <Property Type="Int32" Name="TotalRojo" Nullable="true" />
+          <Property Type="Int32" Name="TotalVerde" Nullable="true" />
+          <Property Type="Int32" Name="TotalVentas" Nullable="true" />
+          <Property Type="Double" Name="TotalBarras" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="VENTASPORMES_Result">
+          <Property Type="Double" Name="ABRIL2017" Nullable="true" />
+          <Property Type="Double" Name="MAYO2017" Nullable="true" />
+          <Property Type="Double" Name="JUNIO2017" Nullable="true" />
+          <Property Type="Double" Name="JULIO2017" Nullable="true" />
+          <Property Type="Double" Name="AGOSTO2017" Nullable="true" />
+          <Property Type="Double" Name="SETIEMBRE2017" Nullable="true" />
+          <Property Type="Double" Name="OCTUBRE2017" Nullable="true" />
+          <Property Type="Double" Name="NOVIEMBRE2017" Nullable="true" />
+          <Property Type="Double" Name="DICIEMBRE2017" Nullable="true" />
+          <Property Type="Double" Name="ENERO2018" Nullable="true" />
+          <Property Type="Double" Name="FEBRERO2018" Nullable="true" />
+          <Property Type="Double" Name="MARZO2018" Nullable="true" />
+          <Property Type="Double" Name="ABRIL2018" Nullable="true" />
+          <Property Type="Double" Name="MAYO2018" Nullable="true" />
+          <Property Type="Double" Name="JUNIO2018" Nullable="true" />
+          <Property Type="Double" Name="JULIO2018" Nullable="true" />
+          <Property Type="Double" Name="AGOSTO2018" Nullable="true" />
+          <Property Type="Double" Name="SETIEMBRE2018" Nullable="true" />
+          <Property Type="Double" Name="OCTUBRE2018" Nullable="true" />
+          <Property Type="Double" Name="NOVIEMBRE2018" Nullable="true" />
+          <Property Type="Double" Name="DICIEMBRE2018" Nullable="true" />
+          <Property Type="Double" Name="ENERO2019" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="sp_pantalla_facturada_Result">
+          <Property Type="Int32" Name="FelipeRojo" Nullable="true" />
+          <Property Type="Int32" Name="FelipeVerde" Nullable="true" />
+          <Property Type="Int32" Name="FelipeTotal" Nullable="true" />
+          <Property Type="Double" Name="Felipe" Nullable="true" />
+          <Property Type="Int32" Name="SofiaRojo" Nullable="true" />
+          <Property Type="Int32" Name="SofiaVerde" Nullable="true" />
+          <Property Type="Int32" Name="SofiaTotal" Nullable="true" />
+          <Property Type="Double" Name="Sofia" Nullable="true" />
+          <Property Type="Int32" Name="GerardoRojo" Nullable="true" />
+          <Property Type="Int32" Name="GerardoVerde" Nullable="true" />
+          <Property Type="Int32" Name="GerardoTotal" Nullable="true" />
+          <Property Type="Double" Name="Gerardo" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaRojo" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaVerde" Nullable="true" />
+          <Property Type="Int32" Name="GuilianaTotal" Nullable="true" />
+          <Property Type="Double" Name="Guiliana" Nullable="true" />
+          <Property Type="Int32" Name="SharonRojo" Nullable="true" />
+          <Property Type="Int32" Name="SharonVerde" Nullable="true" />
+          <Property Type="Int32" Name="SharonTotal" Nullable="true" />
+          <Property Type="Double" Name="Sharon" Nullable="true" />
+          <Property Type="Int32" Name="ElianaRojo" Nullable="true" />
+          <Property Type="Int32" Name="ElianaVerde" Nullable="true" />
+          <Property Type="Int32" Name="ElianaTotal" Nullable="true" />
+          <Property Type="Double" Name="Eliana" Nullable="true" />
+          <Property Type="Int32" Name="MarianneRojo" Nullable="true" />
+          <Property Type="Int32" Name="MarianneVerde" Nullable="true" />
+          <Property Type="Int32" Name="MarianneTotal" Nullable="true" />
+          <Property Type="Double" Name="Marianne" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraRojo" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraVerde" Nullable="true" />
+          <Property Type="Int32" Name="AlejandraTotal" Nullable="true" />
+          <Property Type="Double" Name="Alejandra" Nullable="true" />
+          <Property Type="Int32" Name="YolandaRojo" Nullable="true" />
+          <Property Type="Int32" Name="YolandaVerde" Nullable="true" />
+          <Property Type="Int32" Name="YolandaTotal" Nullable="true" />
+          <Property Type="Double" Name="Yolanda" Nullable="true" />
+          <Property Type="Int32" Name="AlejandroRojo" Nullable="true" />
+          <Property Type="Int32" Name="AlejandroVerde" Nullable="true" />
+          <Property Type="Int32" Name="AlejandroTotal" Nullable="true" />
+          <Property Type="Double" Name="Alejandro" Nullable="true" />
+          <Property Type="Int32" Name="IngridRojo" Nullable="true" />
+          <Property Type="Int32" Name="IngridVerde" Nullable="true" />
+          <Property Type="Int32" Name="IngridTotal" Nullable="true" />
+          <Property Type="Double" Name="Ingrid" Nullable="true" />
+          <Property Type="Int32" Name="VilmaRojo" Nullable="true" />
+          <Property Type="Int32" Name="VilmaVerde" Nullable="true" />
+          <Property Type="Int32" Name="VilmaTotal" Nullable="true" />
+          <Property Type="Double" Name="Vilma" Nullable="true" />
+          <Property Type="Int32" Name="LizzyRojo" Nullable="true" />
+          <Property Type="Int32" Name="LizzyVerde" Nullable="true" />
+          <Property Type="Int32" Name="LizzyTotal" Nullable="true" />
+          <Property Type="Double" Name="Lizzy" Nullable="true" />
+          <Property Type="Int32" Name="TotalRojo" Nullable="true" />
+          <Property Type="Int32" Name="TotalVerde" Nullable="true" />
+          <Property Type="Int32" Name="TotalVentas" Nullable="true" />
+          <Property Type="Double" Name="TotalBarras" Nullable="true" />
+          <Property Type="Double" Name="TotalAyer" Nullable="true" />
+        </ComplexType>
+        <ComplexType Name="pantalla_facturada_Result">
+          <Property Type="Double" Name="FelipeFacturado" Nullable="true" />
+          <Property Type="Double" Name="SofiaFacturado" Nullable="true" />
+          <Property Type="Double" Name="GerardoFacturado" Nullable="true" />
+          <Property Type="Double" Name="GuilianaFacturado" Nullable="true" />
+          <Property Type="Double" Name="SharonFacturado" Nullable="true" />
+          <Property Type="Double" Name="ElianaFacturado" Nullable="true" />
+          <Property Type="Double" Name="MarianneFacturado" Nullable="true" />
+          <Property Type="Double" Name="AlejandraFacturado" Nullable="true" />
+          <Property Type="Double" Name="YolandaFacturado" Nullable="true" />
+          <Property Type="Double" Name="AlejandroFacturado" Nullable="true" />
+          <Property Type="Double" Name="IngridFacturado" Nullable="true" />
+          <Property Type="Double" Name="VilmaFacturado" Nullable="true" />
+          <Property Type="Double" Name="LizzyFacturado" Nullable="true" />
+          <Property Type="Double" Name="TotalBarras" Nullable="true" />
+          <Property Type="Double" Name="TotalAyer" Nullable="true" />
+          <Property Type="Double" Name="TotalFacturado" Nullable="true" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="bd_AgviajesModelStoreContainer" CdmEntityContainer="bd_AgviajesEntities" >
+          <FunctionImportMapping FunctionImportName="pantalla" FunctionName="bd_AgviajesModel.Store.pantalla">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bd_AgviajesModel.pantalla_Result">
+                <ScalarProperty Name="VanesaRojo" ColumnName="VanesaRojo" />
+                <ScalarProperty Name="VanesaVerde" ColumnName="VanesaVerde" />
+                <ScalarProperty Name="VanesaTotal" ColumnName="VanesaTotal" />
+                <ScalarProperty Name="FelipeRojo" ColumnName="FelipeRojo" />
+                <ScalarProperty Name="FelipeVerde" ColumnName="FelipeVerde" />
+                <ScalarProperty Name="FelipeTotal" ColumnName="FelipeTotal" />
+                <ScalarProperty Name="RobertRojo" ColumnName="RobertRojo" />
+                <ScalarProperty Name="RobertVerde" ColumnName="RobertVerde" />
+                <ScalarProperty Name="RobertTotal" ColumnName="RobertTotal" />
+                <ScalarProperty Name="DeborahRojo" ColumnName="DeborahRojo" />
+                <ScalarProperty Name="DeborahVerde" ColumnName="DeborahVerde" />
+                <ScalarProperty Name="DeborahTotal" ColumnName="DeborahTotal" />
+                <ScalarProperty Name="SofiaRojo" ColumnName="SofiaRojo" />
+                <ScalarProperty Name="SofiaVerde" ColumnName="SofiaVerde" />
+                <ScalarProperty Name="SofiaTotal" ColumnName="SofiaTotal" />
+                <ScalarProperty Name="JavierRojo" ColumnName="JavierRojo" />
+                <ScalarProperty Name="JavierVerde" ColumnName="JavierVerde" />
+                <ScalarProperty Name="JavierTotal" ColumnName="JavierTotal" />
+                <ScalarProperty Name="GerardoRojo" ColumnName="GerardoRojo" />
+                <ScalarProperty Name="GerardoVerde" ColumnName="GerardoVerde" />
+                <ScalarProperty Name="GerardoTotal" ColumnName="GerardoTotal" />
+                <ScalarProperty Name="RosanaRojo" ColumnName="RosanaRojo" />
+                <ScalarProperty Name="RosanaVerde" ColumnName="RosanaVerde" />
+                <ScalarProperty Name="RosanaTotal" ColumnName="RosanaTotal" />
+                <ScalarProperty Name="ValeriaRojo" ColumnName="ValeriaRojo" />
+                <ScalarProperty Name="ValeriaVerde" ColumnName="ValeriaVerde" />
+                <ScalarProperty Name="ValeriaTotal" ColumnName="ValeriaTotal" />
+                <ScalarProperty Name="FernandaRojo" ColumnName="FernandaRojo" />
+                <ScalarProperty Name="FernandaVerde" ColumnName="FernandaVerde" />
+                <ScalarProperty Name="FernandaTotal" ColumnName="FernandaTotal" />
+                <ScalarProperty Name="EvelynRojo" ColumnName="EvelynRojo" />
+                <ScalarProperty Name="EvelynVerde" ColumnName="EvelynVerde" />
+                <ScalarProperty Name="EvelynTotal" ColumnName="EvelynTotal" />
+                <ScalarProperty Name="CatherineRojo" ColumnName="CatherineRojo" />
+                <ScalarProperty Name="CatherineVerde" ColumnName="CatherineVerde" />
+                <ScalarProperty Name="CatherineTotal" ColumnName="CatherineTotal" />
+                <ScalarProperty Name="GuilianaRojo" ColumnName="GuilianaRojo" />
+                <ScalarProperty Name="GuilianaVerde" ColumnName="GuilianaVerde" />
+                <ScalarProperty Name="GuilianaTotal" ColumnName="GuilianaTotal" />
+                <ScalarProperty Name="VictoriaRojo" ColumnName="VictoriaRojo" />
+                <ScalarProperty Name="VictoriaVerde" ColumnName="VictoriaVerde" />
+                <ScalarProperty Name="VictoriaTotal" ColumnName="VictoriaTotal" />
+                <ScalarProperty Name="OlgaRojo" ColumnName="OlgaRojo" />
+                <ScalarProperty Name="OlgaVerde" ColumnName="OlgaVerde" />
+                <ScalarProperty Name="OlgaTotal" ColumnName="OlgaTotal" />
+                <ScalarProperty Name="ArletteRojo" ColumnName="ArletteRojo" />
+                <ScalarProperty Name="ArletteVerde" ColumnName="ArletteVerde" />
+                <ScalarProperty Name="ArletteTotal" ColumnName="ArletteTotal" />
+                <ScalarProperty Name="EdithRojo" ColumnName="EdithRojo" />
+                <ScalarProperty Name="EdithVerde" ColumnName="EdithVerde" />
+                <ScalarProperty Name="EdithTotal" ColumnName="EdithTotal" />
+                <ScalarProperty Name="SharonRojo" ColumnName="SharonRojo" />
+                <ScalarProperty Name="SharonVerde" ColumnName="SharonVerde" />
+                <ScalarProperty Name="SharonTotal" ColumnName="SharonTotal" />
+                <ScalarProperty Name="ElianaRojo" ColumnName="ElianaRojo" />
+                <ScalarProperty Name="ElianaVerde" ColumnName="ElianaVerde" />
+                <ScalarProperty Name="ElianaTotal" ColumnName="ElianaTotal" />
+                <ScalarProperty Name="MariaRojo" ColumnName="MariaRojo" />
+                <ScalarProperty Name="MariaVerde" ColumnName="MariaVerde" />
+                <ScalarProperty Name="MariaTotal" ColumnName="MariaTotal" />
+                <ScalarProperty Name="MarianneRojo" ColumnName="MarianneRojo" />
+                <ScalarProperty Name="MarianneVerde" ColumnName="MarianneVerde" />
+                <ScalarProperty Name="MarianneTotal" ColumnName="MarianneTotal" />
+                <ScalarProperty Name="AlejandraRojo" ColumnName="AlejandraRojo" />
+                <ScalarProperty Name="AlejandraVerde" ColumnName="AlejandraVerde" />
+                <ScalarProperty Name="AlejandraTotal" ColumnName="AlejandraTotal" />
+                <ScalarProperty Name="YolandaRojo" ColumnName="YolandaRojo" />
+                <ScalarProperty Name="YolandaVerde" ColumnName="YolandaVerde" />
+                <ScalarProperty Name="YolandaTotal" ColumnName="YolandaTotal" />
+                <ScalarProperty Name="RenzoRojo" ColumnName="RenzoRojo" />
+                <ScalarProperty Name="RenzoVerde" ColumnName="RenzoVerde" />
+                <ScalarProperty Name="RenzoTotal" ColumnName="RenzoTotal" />
+                <ScalarProperty Name="LolaRojo" ColumnName="LolaRojo" />
+                <ScalarProperty Name="LolaVerde" ColumnName="LolaVerde" />
+                <ScalarProperty Name="LolaTotal" ColumnName="LolaTotal" />
+                <ScalarProperty Name="JoanRojo" ColumnName="JoanRojo" />
+                <ScalarProperty Name="JoanVerde" ColumnName="JoanVerde" />
+                <ScalarProperty Name="JoanTotal" ColumnName="JoanTotal" />
+                <ScalarProperty Name="JesusRojo" ColumnName="JesusRojo" />
+                <ScalarProperty Name="JesusVerde" ColumnName="JesusVerde" />
+                <ScalarProperty Name="JesusTotal" ColumnName="JesusTotal" />
+                <ScalarProperty Name="AlejandroRojo" ColumnName="AlejandroRojo" />
+                <ScalarProperty Name="AlejandroVerde" ColumnName="AlejandroVerde" />
+                <ScalarProperty Name="AlejandroTotal" ColumnName="AlejandroTotal" />
+                <ScalarProperty Name="IngridRojo" ColumnName="IngridRojo" />
+                <ScalarProperty Name="IngridVerde" ColumnName="IngridVerde" />
+                <ScalarProperty Name="IngridTotal" ColumnName="IngridTotal" />
+                <ScalarProperty Name="VilmaRojo" ColumnName="VilmaRojo" />
+                <ScalarProperty Name="VilmaVerde" ColumnName="VilmaVerde" />
+                <ScalarProperty Name="VilmaTotal" ColumnName="VilmaTotal" />
+                <ScalarProperty Name="LizzyRojo" ColumnName="LizzyRojo" />
+                <ScalarProperty Name="LizzyVerde" ColumnName="LizzyVerde" />
+                <ScalarProperty Name="LizzyTotal" ColumnName="LizzyTotal" />
+                <ScalarProperty Name="Vanesa" ColumnName="Vanesa" />
+                <ScalarProperty Name="Felipe" ColumnName="Felipe" />
+                <ScalarProperty Name="Robert" ColumnName="Robert" />
+                <ScalarProperty Name="Deborah" ColumnName="Deborah" />
+                <ScalarProperty Name="Sofia" ColumnName="Sofia" />
+                <ScalarProperty Name="Javier" ColumnName="Javier" />
+                <ScalarProperty Name="Gerardo" ColumnName="Gerardo" />
+                <ScalarProperty Name="Rosana" ColumnName="Rosana" />
+                <ScalarProperty Name="Valeria" ColumnName="Valeria" />
+                <ScalarProperty Name="Fernanda" ColumnName="Fernanda" />
+                <ScalarProperty Name="Evelyn" ColumnName="Evelyn" />
+                <ScalarProperty Name="Catherine" ColumnName="Catherine" />
+                <ScalarProperty Name="Guiliana" ColumnName="Guiliana" />
+                <ScalarProperty Name="Victoria" ColumnName="Victoria" />
+                <ScalarProperty Name="Olga" ColumnName="Olga" />
+                <ScalarProperty Name="Arlette" ColumnName="Arlette" />
+                <ScalarProperty Name="Edith" ColumnName="Edith" />
+                <ScalarProperty Name="Sharon" ColumnName="Sharon" />
+                <ScalarProperty Name="Eliana" ColumnName="Eliana" />
+                <ScalarProperty Name="Maria" ColumnName="Maria" />
+                <ScalarProperty Name="Marianne" ColumnName="Marianne" />
+                <ScalarProperty Name="Alejandra" ColumnName="Alejandra" />
+                <ScalarProperty Name="Yolanda" ColumnName="Yolanda" />
+                <ScalarProperty Name="Renzo" ColumnName="Renzo" />
+                <ScalarProperty Name="Lola" ColumnName="Lola" />
+                <ScalarProperty Name="Joan" ColumnName="Joan" />
+                <ScalarProperty Name="Jesus" ColumnName="Jesus" />
+                <ScalarProperty Name="Alejandro" ColumnName="Alejandro" />
+                <ScalarProperty Name="Ingrid" ColumnName="Ingrid" />
+                <ScalarProperty Name="Vilma" ColumnName="Vilma" />
+                <ScalarProperty Name="Lizzy" ColumnName="Lizzy" />
+                <ScalarProperty Name="TotalRojo" ColumnName="TotalRojo" />
+                <ScalarProperty Name="TotalVerde" ColumnName="TotalVerde" />
+                <ScalarProperty Name="TotalVentas" ColumnName="TotalVentas" />
+                <ScalarProperty Name="TotalBarras" ColumnName="TotalBarras" />
+                <ScalarProperty Name="TotalAyer" ColumnName="TotalAyer" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="Pantalla2" FunctionName="bd_AgviajesModel.Store.Pantalla2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bd_AgviajesModel.Pantalla2_Result">
+                <ScalarProperty Name="VanesaRojo" ColumnName="VanesaRojo" />
+                <ScalarProperty Name="VanesaVerde" ColumnName="VanesaVerde" />
+                <ScalarProperty Name="VanesaTotal" ColumnName="VanesaTotal" />
+                <ScalarProperty Name="FelipeRojo" ColumnName="FelipeRojo" />
+                <ScalarProperty Name="FelipeVerde" ColumnName="FelipeVerde" />
+                <ScalarProperty Name="FelipeTotal" ColumnName="FelipeTotal" />
+                <ScalarProperty Name="RobertRojo" ColumnName="RobertRojo" />
+                <ScalarProperty Name="RobertVerde" ColumnName="RobertVerde" />
+                <ScalarProperty Name="RobertTotal" ColumnName="RobertTotal" />
+                <ScalarProperty Name="DeborahRojo" ColumnName="DeborahRojo" />
+                <ScalarProperty Name="DeborahVerde" ColumnName="DeborahVerde" />
+                <ScalarProperty Name="DeborahTotal" ColumnName="DeborahTotal" />
+                <ScalarProperty Name="SofiaRojo" ColumnName="SofiaRojo" />
+                <ScalarProperty Name="SofiaVerde" ColumnName="SofiaVerde" />
+                <ScalarProperty Name="SofiaTotal" ColumnName="SofiaTotal" />
+                <ScalarProperty Name="JavierRojo" ColumnName="JavierRojo" />
+                <ScalarProperty Name="JavierVerde" ColumnName="JavierVerde" />
+                <ScalarProperty Name="JavierTotal" ColumnName="JavierTotal" />
+                <ScalarProperty Name="GerardoRojo" ColumnName="GerardoRojo" />
+                <ScalarProperty Name="GerardoVerde" ColumnName="GerardoVerde" />
+                <ScalarProperty Name="GerardoTotal" ColumnName="GerardoTotal" />
+                <ScalarProperty Name="RosanaRojo" ColumnName="RosanaRojo" />
+                <ScalarProperty Name="RosanaVerde" ColumnName="RosanaVerde" />
+                <ScalarProperty Name="RosanaTotal" ColumnName="RosanaTotal" />
+                <ScalarProperty Name="ValeriaRojo" ColumnName="ValeriaRojo" />
+                <ScalarProperty Name="ValeriaVerde" ColumnName="ValeriaVerde" />
+                <ScalarProperty Name="ValeriaTotal" ColumnName="ValeriaTotal" />
+                <ScalarProperty Name="FernandaRojo" ColumnName="FernandaRojo" />
+                <ScalarProperty Name="FernandaVerde" ColumnName="FernandaVerde" />
+                <ScalarProperty Name="FernandaTotal" ColumnName="FernandaTotal" />
+                <ScalarProperty Name="EvelynRojo" ColumnName="EvelynRojo" />
+                <ScalarProperty Name="EvelynVerde" ColumnName="EvelynVerde" />
+                <ScalarProperty Name="EvelynTotal" ColumnName="EvelynTotal" />
+                <ScalarProperty Name="CatherineRojo" ColumnName="CatherineRojo" />
+                <ScalarProperty Name="CatherineVerde" ColumnName="CatherineVerde" />
+                <ScalarProperty Name="CatherineTotal" ColumnName="CatherineTotal" />
+                <ScalarProperty Name="GuilianaRojo" ColumnName="GuilianaRojo" />
+                <ScalarProperty Name="GuilianaVerde" ColumnName="GuilianaVerde" />
+                <ScalarProperty Name="GuilianaTotal" ColumnName="GuilianaTotal" />
+                <ScalarProperty Name="VictoriaRojo" ColumnName="VictoriaRojo" />
+                <ScalarProperty Name="VictoriaVerde" ColumnName="VictoriaVerde" />
+                <ScalarProperty Name="VictoriaTotal" ColumnName="VictoriaTotal" />
+                <ScalarProperty Name="OlgaRojo" ColumnName="OlgaRojo" />
+                <ScalarProperty Name="OlgaVerde" ColumnName="OlgaVerde" />
+                <ScalarProperty Name="OlgaTotal" ColumnName="OlgaTotal" />
+                <ScalarProperty Name="ArletteRojo" ColumnName="ArletteRojo" />
+                <ScalarProperty Name="ArletteVerde" ColumnName="ArletteVerde" />
+                <ScalarProperty Name="ArletteTotal" ColumnName="ArletteTotal" />
+                <ScalarProperty Name="EdithRojo" ColumnName="EdithRojo" />
+                <ScalarProperty Name="EdithVerde" ColumnName="EdithVerde" />
+                <ScalarProperty Name="EdithTotal" ColumnName="EdithTotal" />
+                <ScalarProperty Name="SharonRojo" ColumnName="SharonRojo" />
+                <ScalarProperty Name="SharonVerde" ColumnName="SharonVerde" />
+                <ScalarProperty Name="SharonTotal" ColumnName="SharonTotal" />
+                <ScalarProperty Name="ElianaRojo" ColumnName="ElianaRojo" />
+                <ScalarProperty Name="ElianaVerde" ColumnName="ElianaVerde" />
+                <ScalarProperty Name="ElianaTotal" ColumnName="ElianaTotal" />
+                <ScalarProperty Name="MariaRojo" ColumnName="MariaRojo" />
+                <ScalarProperty Name="MariaVerde" ColumnName="MariaVerde" />
+                <ScalarProperty Name="MariaTotal" ColumnName="MariaTotal" />
+                <ScalarProperty Name="MarianneRojo" ColumnName="MarianneRojo" />
+                <ScalarProperty Name="MarianneVerde" ColumnName="MarianneVerde" />
+                <ScalarProperty Name="MarianneTotal" ColumnName="MarianneTotal" />
+                <ScalarProperty Name="AlejandraRojo" ColumnName="AlejandraRojo" />
+                <ScalarProperty Name="AlejandraVerde" ColumnName="AlejandraVerde" />
+                <ScalarProperty Name="AlejandraTotal" ColumnName="AlejandraTotal" />
+                <ScalarProperty Name="YolandaRojo" ColumnName="YolandaRojo" />
+                <ScalarProperty Name="YolandaVerde" ColumnName="YolandaVerde" />
+                <ScalarProperty Name="YolandaTotal" ColumnName="YolandaTotal" />
+                <ScalarProperty Name="Vanesa" ColumnName="Vanesa" />
+                <ScalarProperty Name="Felipe" ColumnName="Felipe" />
+                <ScalarProperty Name="Robert" ColumnName="Robert" />
+                <ScalarProperty Name="Deborah" ColumnName="Deborah" />
+                <ScalarProperty Name="Sofia" ColumnName="Sofia" />
+                <ScalarProperty Name="Javier" ColumnName="Javier" />
+                <ScalarProperty Name="Gerardo" ColumnName="Gerardo" />
+                <ScalarProperty Name="Rosana" ColumnName="Rosana" />
+                <ScalarProperty Name="Valeria" ColumnName="Valeria" />
+                <ScalarProperty Name="Fernanda" ColumnName="Fernanda" />
+                <ScalarProperty Name="Evelyn" ColumnName="Evelyn" />
+                <ScalarProperty Name="Catherine" ColumnName="Catherine" />
+                <ScalarProperty Name="Guiliana" ColumnName="Guiliana" />
+                <ScalarProperty Name="Victoria" ColumnName="Victoria" />
+                <ScalarProperty Name="Olga" ColumnName="Olga" />
+                <ScalarProperty Name="Arlette" ColumnName="Arlette" />
+                <ScalarProperty Name="Edith" ColumnName="Edith" />
+                <ScalarProperty Name="Sharon" ColumnName="Sharon" />
+                <ScalarProperty Name="Eliana" ColumnName="Eliana" />
+                <ScalarProperty Name="Maria" ColumnName="Maria" />
+                <ScalarProperty Name="Marianne" ColumnName="Marianne" />
+                <ScalarProperty Name="Alejandra" ColumnName="Alejandra" />
+                <ScalarProperty Name="Yolanda" ColumnName="Yolanda" />
+                <ScalarProperty Name="TotalRojo" ColumnName="TotalRojo" />
+                <ScalarProperty Name="TotalVerde" ColumnName="TotalVerde" />
+                <ScalarProperty Name="TotalVentas" ColumnName="TotalVentas" />
+                <ScalarProperty Name="TotalBarras" ColumnName="TotalBarras" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="pantalla3" FunctionName="bd_AgviajesModel.Store.pantalla3">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bd_AgviajesModel.pantalla3_Result">
+                <ScalarProperty Name="VanesaRojo" ColumnName="VanesaRojo" />
+                <ScalarProperty Name="VanesaVerde" ColumnName="VanesaVerde" />
+                <ScalarProperty Name="VanesaTotal" ColumnName="VanesaTotal" />
+                <ScalarProperty Name="FelipeRojo" ColumnName="FelipeRojo" />
+                <ScalarProperty Name="FelipeVerde" ColumnName="FelipeVerde" />
+                <ScalarProperty Name="FelipeTotal" ColumnName="FelipeTotal" />
+                <ScalarProperty Name="RobertRojo" ColumnName="RobertRojo" />
+                <ScalarProperty Name="RobertVerde" ColumnName="RobertVerde" />
+                <ScalarProperty Name="RobertTotal" ColumnName="RobertTotal" />
+                <ScalarProperty Name="DeborahRojo" ColumnName="DeborahRojo" />
+                <ScalarProperty Name="DeborahVerde" ColumnName="DeborahVerde" />
+                <ScalarProperty Name="DeborahTotal" ColumnName="DeborahTotal" />
+                <ScalarProperty Name="SofiaRojo" ColumnName="SofiaRojo" />
+                <ScalarProperty Name="SofiaVerde" ColumnName="SofiaVerde" />
+                <ScalarProperty Name="SofiaTotal" ColumnName="SofiaTotal" />
+                <ScalarProperty Name="JavierRojo" ColumnName="JavierRojo" />
+                <ScalarProperty Name="JavierVerde" ColumnName="JavierVerde" />
+                <ScalarProperty Name="JavierTotal" ColumnName="JavierTotal" />
+                <ScalarProperty Name="GerardoRojo" ColumnName="GerardoRojo" />
+                <ScalarProperty Name="GerardoVerde" ColumnName="GerardoVerde" />
+                <ScalarProperty Name="GerardoTotal" ColumnName="GerardoTotal" />
+                <ScalarProperty Name="RosanaRojo" ColumnName="RosanaRojo" />
+                <ScalarProperty Name="RosanaVerde" ColumnName="RosanaVerde" />
+                <ScalarProperty Name="RosanaTotal" ColumnName="RosanaTotal" />
+                <ScalarProperty Name="ValeriaRojo" ColumnName="ValeriaRojo" />
+                <ScalarProperty Name="ValeriaVerde" ColumnName="ValeriaVerde" />
+                <ScalarProperty Name="ValeriaTotal" ColumnName="ValeriaTotal" />
+                <ScalarProperty Name="FernandaRojo" ColumnName="FernandaRojo" />
+                <ScalarProperty Name="FernandaVerde" ColumnName="FernandaVerde" />
+                <ScalarProperty Name="FernandaTotal" ColumnName="FernandaTotal" />
+                <ScalarProperty Name="EvelynRojo" ColumnName="EvelynRojo" />
+                <ScalarProperty Name="EvelynVerde" ColumnName="EvelynVerde" />
+                <ScalarProperty Name="EvelynTotal" ColumnName="EvelynTotal" />
+                <ScalarProperty Name="CatherineRojo" ColumnName="CatherineRojo" />
+                <ScalarProperty Name="CatherineVerde" ColumnName="CatherineVerde" />
+                <ScalarProperty Name="CatherineTotal" ColumnName="CatherineTotal" />
+                <ScalarProperty Name="GuilianaRojo" ColumnName="GuilianaRojo" />
+                <ScalarProperty Name="GuilianaVerde" ColumnName="GuilianaVerde" />
+                <ScalarProperty Name="GuilianaTotal" ColumnName="GuilianaTotal" />
+                <ScalarProperty Name="VictoriaRojo" ColumnName="VictoriaRojo" />
+                <ScalarProperty Name="VictoriaVerde" ColumnName="VictoriaVerde" />
+                <ScalarProperty Name="VictoriaTotal" ColumnName="VictoriaTotal" />
+                <ScalarProperty Name="OlgaRojo" ColumnName="OlgaRojo" />
+                <ScalarProperty Name="OlgaVerde" ColumnName="OlgaVerde" />
+                <ScalarProperty Name="OlgaTotal" ColumnName="OlgaTotal" />
+                <ScalarProperty Name="ArletteRojo" ColumnName="ArletteRojo" />
+                <ScalarProperty Name="ArletteVerde" ColumnName="ArletteVerde" />
+                <ScalarProperty Name="ArletteTotal" ColumnName="ArletteTotal" />
+                <ScalarProperty Name="EdithRojo" ColumnName="EdithRojo" />
+                <ScalarProperty Name="EdithVerde" ColumnName="EdithVerde" />
+                <ScalarProperty Name="EdithTotal" ColumnName="EdithTotal" />
+                <ScalarProperty Name="SharonRojo" ColumnName="SharonRojo" />
+                <ScalarProperty Name="SharonVerde" ColumnName="SharonVerde" />
+                <ScalarProperty Name="SharonTotal" ColumnName="SharonTotal" />
+                <ScalarProperty Name="ElianaRojo" ColumnName="ElianaRojo" />
+                <ScalarProperty Name="ElianaVerde" ColumnName="ElianaVerde" />
+                <ScalarProperty Name="ElianaTotal" ColumnName="ElianaTotal" />
+                <ScalarProperty Name="MariaRojo" ColumnName="MariaRojo" />
+                <ScalarProperty Name="MariaVerde" ColumnName="MariaVerde" />
+                <ScalarProperty Name="MariaTotal" ColumnName="MariaTotal" />
+                <ScalarProperty Name="MarianneRojo" ColumnName="MarianneRojo" />
+                <ScalarProperty Name="MarianneVerde" ColumnName="MarianneVerde" />
+                <ScalarProperty Name="MarianneTotal" ColumnName="MarianneTotal" />
+                <ScalarProperty Name="AlejandraRojo" ColumnName="AlejandraRojo" />
+                <ScalarProperty Name="AlejandraVerde" ColumnName="AlejandraVerde" />
+                <ScalarProperty Name="AlejandraTotal" ColumnName="AlejandraTotal" />
+                <ScalarProperty Name="YolandaRojo" ColumnName="YolandaRojo" />
+                <ScalarProperty Name="YolandaVerde" ColumnName="YolandaVerde" />
+                <ScalarProperty Name="YolandaTotal" ColumnName="YolandaTotal" />
+                <ScalarProperty Name="Vanesa" ColumnName="Vanesa" />
+                <ScalarProperty Name="Felipe" ColumnName="Felipe" />
+                <ScalarProperty Name="Robert" ColumnName="Robert" />
+                <ScalarProperty Name="Deborah" ColumnName="Deborah" />
+                <ScalarProperty Name="Sofia" ColumnName="Sofia" />
+                <ScalarProperty Name="Javier" ColumnName="Javier" />
+                <ScalarProperty Name="Gerardo" ColumnName="Gerardo" />
+                <ScalarProperty Name="Rosana" ColumnName="Rosana" />
+                <ScalarProperty Name="Valeria" ColumnName="Valeria" />
+                <ScalarProperty Name="Fernanda" ColumnName="Fernanda" />
+                <ScalarProperty Name="Evelyn" ColumnName="Evelyn" />
+                <ScalarProperty Name="Catherine" ColumnName="Catherine" />
+                <ScalarProperty Name="Guiliana" ColumnName="Guiliana" />
+                <ScalarProperty Name="Victoria" ColumnName="Victoria" />
+                <ScalarProperty Name="Olga" ColumnName="Olga" />
+                <ScalarProperty Name="Arlette" ColumnName="Arlette" />
+                <ScalarProperty Name="Edith" ColumnName="Edith" />
+                <ScalarProperty Name="Sharon" ColumnName="Sharon" />
+                <ScalarProperty Name="Eliana" ColumnName="Eliana" />
+                <ScalarProperty Name="Maria" ColumnName="Maria" />
+                <ScalarProperty Name="Marianne" ColumnName="Marianne" />
+                <ScalarProperty Name="Alejandra" ColumnName="Alejandra" />
+                <ScalarProperty Name="Yolanda" ColumnName="Yolanda" />
+                <ScalarProperty Name="TotalRojo" ColumnName="TotalRojo" />
+                <ScalarProperty Name="TotalVerde" ColumnName="TotalVerde" />
+                <ScalarProperty Name="TotalVentas" ColumnName="TotalVentas" />
+                <ScalarProperty Name="TotalBarras" ColumnName="TotalBarras" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="VENTASPORMES" FunctionName="bd_AgviajesModel.Store.VENTASPORMES">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bd_AgviajesModel.VENTASPORMES_Result">
+                <ScalarProperty Name="ABRIL2017" ColumnName="ABRIL2017" />
+                <ScalarProperty Name="MAYO2017" ColumnName="MAYO2017" />
+                <ScalarProperty Name="JUNIO2017" ColumnName="JUNIO2017" />
+                <ScalarProperty Name="JULIO2017" ColumnName="JULIO2017" />
+                <ScalarProperty Name="AGOSTO2017" ColumnName="AGOSTO2017" />
+                <ScalarProperty Name="SETIEMBRE2017" ColumnName="SETIEMBRE2017" />
+                <ScalarProperty Name="OCTUBRE2017" ColumnName="OCTUBRE2017" />
+                <ScalarProperty Name="NOVIEMBRE2017" ColumnName="NOVIEMBRE2017" />
+                <ScalarProperty Name="DICIEMBRE2017" ColumnName="DICIEMBRE2017" />
+                <ScalarProperty Name="ENERO2018" ColumnName="ENERO2018" />
+                <ScalarProperty Name="FEBRERO2018" ColumnName="FEBRERO2018" />
+                <ScalarProperty Name="MARZO2018" ColumnName="MARZO2018" />
+                <ScalarProperty Name="ABRIL2018" ColumnName="ABRIL2018" />
+                <ScalarProperty Name="MAYO2018" ColumnName="MAYO2018" />
+                <ScalarProperty Name="JUNIO2018" ColumnName="JUNIO2018" />
+                <ScalarProperty Name="JULIO2018" ColumnName="JULIO2018" />
+                <ScalarProperty Name="AGOSTO2018" ColumnName="AGOSTO2018" />
+                <ScalarProperty Name="SETIEMBRE2018" ColumnName="SETIEMBRE2018" />
+                <ScalarProperty Name="OCTUBRE2018" ColumnName="OCTUBRE2018" />
+                <ScalarProperty Name="NOVIEMBRE2018" ColumnName="NOVIEMBRE2018" />
+                <ScalarProperty Name="DICIEMBRE2018" ColumnName="DICIEMBRE2018" />
+                <ScalarProperty Name="ENERO2019" ColumnName="ENERO2019" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_pantalla_facturada" FunctionName="bd_AgviajesModel.Store.sp_pantalla_facturada">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bd_AgviajesModel.sp_pantalla_facturada_Result">
+                <ScalarProperty Name="FelipeRojo" ColumnName="FelipeRojo" />
+                <ScalarProperty Name="FelipeVerde" ColumnName="FelipeVerde" />
+                <ScalarProperty Name="FelipeTotal" ColumnName="FelipeTotal" />
+                <ScalarProperty Name="Felipe" ColumnName="Felipe" />
+                <ScalarProperty Name="SofiaRojo" ColumnName="SofiaRojo" />
+                <ScalarProperty Name="SofiaVerde" ColumnName="SofiaVerde" />
+                <ScalarProperty Name="SofiaTotal" ColumnName="SofiaTotal" />
+                <ScalarProperty Name="Sofia" ColumnName="Sofia" />
+                <ScalarProperty Name="GerardoRojo" ColumnName="GerardoRojo" />
+                <ScalarProperty Name="GerardoVerde" ColumnName="GerardoVerde" />
+                <ScalarProperty Name="GerardoTotal" ColumnName="GerardoTotal" />
+                <ScalarProperty Name="Gerardo" ColumnName="Gerardo" />
+                <ScalarProperty Name="GuilianaRojo" ColumnName="GuilianaRojo" />
+                <ScalarProperty Name="GuilianaVerde" ColumnName="GuilianaVerde" />
+                <ScalarProperty Name="GuilianaTotal" ColumnName="GuilianaTotal" />
+                <ScalarProperty Name="Guiliana" ColumnName="Guiliana" />
+                <ScalarProperty Name="SharonRojo" ColumnName="SharonRojo" />
+                <ScalarProperty Name="SharonVerde" ColumnName="SharonVerde" />
+                <ScalarProperty Name="SharonTotal" ColumnName="SharonTotal" />
+                <ScalarProperty Name="Sharon" ColumnName="Sharon" />
+                <ScalarProperty Name="ElianaRojo" ColumnName="ElianaRojo" />
+                <ScalarProperty Name="ElianaVerde" ColumnName="ElianaVerde" />
+                <ScalarProperty Name="ElianaTotal" ColumnName="ElianaTotal" />
+                <ScalarProperty Name="Eliana" ColumnName="Eliana" />
+                <ScalarProperty Name="MarianneRojo" ColumnName="MarianneRojo" />
+                <ScalarProperty Name="MarianneVerde" ColumnName="MarianneVerde" />
+                <ScalarProperty Name="MarianneTotal" ColumnName="MarianneTotal" />
+                <ScalarProperty Name="Marianne" ColumnName="Marianne" />
+                <ScalarProperty Name="AlejandraRojo" ColumnName="AlejandraRojo" />
+                <ScalarProperty Name="AlejandraVerde" ColumnName="AlejandraVerde" />
+                <ScalarProperty Name="AlejandraTotal" ColumnName="AlejandraTotal" />
+                <ScalarProperty Name="Alejandra" ColumnName="Alejandra" />
+                <ScalarProperty Name="YolandaRojo" ColumnName="YolandaRojo" />
+                <ScalarProperty Name="YolandaVerde" ColumnName="YolandaVerde" />
+                <ScalarProperty Name="YolandaTotal" ColumnName="YolandaTotal" />
+                <ScalarProperty Name="Yolanda" ColumnName="Yolanda" />
+                <ScalarProperty Name="AlejandroRojo" ColumnName="AlejandroRojo" />
+                <ScalarProperty Name="AlejandroVerde" ColumnName="AlejandroVerde" />
+                <ScalarProperty Name="AlejandroTotal" ColumnName="AlejandroTotal" />
+                <ScalarProperty Name="Alejandro" ColumnName="Alejandro" />
+                <ScalarProperty Name="IngridRojo" ColumnName="IngridRojo" />
+                <ScalarProperty Name="IngridVerde" ColumnName="IngridVerde" />
+                <ScalarProperty Name="IngridTotal" ColumnName="IngridTotal" />
+                <ScalarProperty Name="Ingrid" ColumnName="Ingrid" />
+                <ScalarProperty Name="VilmaRojo" ColumnName="VilmaRojo" />
+                <ScalarProperty Name="VilmaVerde" ColumnName="VilmaVerde" />
+                <ScalarProperty Name="VilmaTotal" ColumnName="VilmaTotal" />
+                <ScalarProperty Name="Vilma" ColumnName="Vilma" />
+                <ScalarProperty Name="LizzyRojo" ColumnName="LizzyRojo" />
+                <ScalarProperty Name="LizzyVerde" ColumnName="LizzyVerde" />
+                <ScalarProperty Name="LizzyTotal" ColumnName="LizzyTotal" />
+                <ScalarProperty Name="Lizzy" ColumnName="Lizzy" />
+                <ScalarProperty Name="TotalRojo" ColumnName="TotalRojo" />
+                <ScalarProperty Name="TotalVerde" ColumnName="TotalVerde" />
+                <ScalarProperty Name="TotalVentas" ColumnName="TotalVentas" />
+                <ScalarProperty Name="TotalBarras" ColumnName="TotalBarras" />
+                <ScalarProperty Name="TotalAyer" ColumnName="TotalAyer" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="pantalla_facturada" FunctionName="bd_AgviajesModel.Store.pantalla_facturada">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="bd_AgviajesModel.pantalla_facturada_Result">
+                <ScalarProperty Name="FelipeFacturado" ColumnName="FelipeFacturado" />
+                <ScalarProperty Name="SofiaFacturado" ColumnName="SofiaFacturado" />
+                <ScalarProperty Name="GerardoFacturado" ColumnName="GerardoFacturado" />
+                <ScalarProperty Name="GuilianaFacturado" ColumnName="GuilianaFacturado" />
+                <ScalarProperty Name="SharonFacturado" ColumnName="SharonFacturado" />
+                <ScalarProperty Name="ElianaFacturado" ColumnName="ElianaFacturado" />
+                <ScalarProperty Name="MarianneFacturado" ColumnName="MarianneFacturado" />
+                <ScalarProperty Name="AlejandraFacturado" ColumnName="AlejandraFacturado" />
+                <ScalarProperty Name="YolandaFacturado" ColumnName="YolandaFacturado" />
+                <ScalarProperty Name="AlejandroFacturado" ColumnName="AlejandroFacturado" />
+                <ScalarProperty Name="IngridFacturado" ColumnName="IngridFacturado" />
+                <ScalarProperty Name="VilmaFacturado" ColumnName="VilmaFacturado" />
+                <ScalarProperty Name="LizzyFacturado" ColumnName="LizzyFacturado" />
+                <ScalarProperty Name="TotalBarras" ColumnName="TotalBarras" />
+                <ScalarProperty Name="TotalAyer" ColumnName="TotalAyer" />
+                <ScalarProperty Name="TotalFacturado" ColumnName="TotalFacturado" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

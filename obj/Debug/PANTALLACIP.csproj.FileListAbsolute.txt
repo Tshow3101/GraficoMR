@@ -1,0 +1,312 @@
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\ApplicationInsights.config
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\PANTALLACIP.dll.config
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\PANTALLACIP.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\PANTALLACIP.pdb
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\csc.exe
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\csc.exe.config
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\csc.rsp
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\csi.exe
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\csi.exe.config
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\csi.rsp
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.AppContext.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Console.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.IO.Pipes.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Security.Claims.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Threading.Thread.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\vbc.exe
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\vbc.exe.config
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\vbc.rsp
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Antlr3.Runtime.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\EntityFramework.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.AI.Web.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.ApplicationInsights.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Newtonsoft.Json.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.Helpers.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.Mvc.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.Optimization.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.Razor.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.WebPages.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\WebGrease.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\EntityFramework.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.Helpers.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.Mvc.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.Optimization.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.Razor.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.WebPages.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Newtonsoft.Json.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Antlr3.Runtime.pdb
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.AI.Web.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\es\System.Web.Helpers.resources.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\es\System.Web.Mvc.resources.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\es\System.Web.Optimization.resources.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\es\System.Web.Razor.resources.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\es\System.Web.WebPages.resources.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\obj\Debug\PANTALLACIP.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\obj\Debug\PANTALLACIP.csproj.CopyComplete
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\obj\Debug\PANTALLACIP.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\obj\Debug\PANTALLACIP.pdb
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Desktop\PANTALLACIP MVC5\PANTALLACIP\PANTALLACIP\obj\Debug\PANTALLACIP.csprojAssemblyReference.cache
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\ApplicationInsights.config
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\PANTALLACIP.dll.config
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\PANTALLACIP.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\PANTALLACIP.pdb
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csc.exe
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csc.exe.config
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csc.rsp
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csi.exe
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csi.exe.config
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csi.rsp
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.AppContext.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Console.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.IO.Compression.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.IO.Pipes.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Claims.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Threading.Thread.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.ValueTuple.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Xml.XPath.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\vbc.exe
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\vbc.exe.config
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\vbc.rsp
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\VBCSCompiler.exe
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Antlr3.Runtime.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\EntityFramework.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.Web.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.ApplicationInsights.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Newtonsoft.Json.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Helpers.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Mvc.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Optimization.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Razor.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.Deployment.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.Razor.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\WebGrease.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\EntityFramework.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Helpers.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Mvc.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Optimization.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Razor.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.Deployment.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.Razor.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Newtonsoft.Json.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Antlr3.Runtime.pdb
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.Web.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.Helpers.resources.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.Mvc.resources.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.Optimization.resources.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.Razor.resources.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.WebPages.resources.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\obj\Debug\PANTALLACIP.csprojAssemblyReference.cache
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\obj\Debug\PANTALLACIP.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\obj\Debug\PANTALLACIP.csproj.CopyComplete
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\obj\Debug\PANTALLACIP.dll
+C:\Users\User\Desktop\PantallaCIP0310\PANTALLACIP\obj\Debug\PANTALLACIP.pdb
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\ApplicationInsights.config
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\PANTALLACIP.dll.config
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\PANTALLACIP.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\PANTALLACIP.pdb
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csc.exe
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csc.exe.config
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csc.rsp
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csi.exe
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csi.exe.config
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\csi.rsp
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.AppContext.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Console.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.IO.Compression.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.IO.Pipes.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Claims.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Threading.Thread.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.ValueTuple.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Xml.XPath.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\vbc.exe
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\vbc.exe.config
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\vbc.rsp
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\VBCSCompiler.exe
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Antlr3.Runtime.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\EntityFramework.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\EntityFramework.SqlServer.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.Web.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.ApplicationInsights.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Newtonsoft.Json.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Helpers.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Mvc.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Optimization.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Razor.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.Deployment.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.Razor.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\WebGrease.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\EntityFramework.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\EntityFramework.SqlServer.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Helpers.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Mvc.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Optimization.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.Razor.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.Deployment.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Web.WebPages.Razor.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Newtonsoft.Json.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Antlr3.Runtime.pdb
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.AI.Web.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.Helpers.resources.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.Mvc.resources.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.Optimization.resources.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.Razor.resources.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.WebPages.resources.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\obj\Debug\PANTALLACIP.csprojAssemblyReference.cache
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\obj\Debug\PANTALLACIP.csproj.CoreCompileInputs.cache
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\obj\Debug\PANTALLACIP.csproj.CopyComplete
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\obj\Debug\PANTALLACIP.dll
+C:\Users\RECEPTIVO-01\Desktop\PantallaCIP0310\PANTALLACIP\obj\Debug\PANTALLACIP.pdb
